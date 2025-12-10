@@ -10,12 +10,13 @@ A Flask-based quiz app for studying recommender systems concepts. Features a Neo
 - **Calculator** - Built-in calculator for calculation questions
 - **Dark mode** - Toggle between light and dark themes
 - **Shuffled options** - Answer options are randomized each time
+- **Mobile friendly** - Access from your phone on the same WiFi network
 
 ## Setup
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/recommender-system-quiz.git
+   git clone https://github.com/Gabnyb/recommender-system-quiz.git
    cd recommender-system-quiz
    ```
 
@@ -30,7 +31,7 @@ A Flask-based quiz app for studying recommender systems concepts. Features a Neo
 
 4. **Install dependencies**
    ```bash
-   pip install flask
+   pip install -r requirements.txt
    ```
 
 5. **Run the app**
@@ -39,7 +40,18 @@ A Flask-based quiz app for studying recommender systems concepts. Features a Neo
    ```
 
 6. **Open in browser**
-   - Navigate to http://127.0.0.1:5000
+   - On your computer: http://127.0.0.1:5000
+   - On your phone: Use the IP address shown in the terminal (e.g., `http://192.168.x.x:5000`)
+
+## 📱 Access from Phone
+
+The app is accessible from any device on your local network:
+
+1. Make sure your phone is on the **same WiFi** as your computer
+2. Run `python app.py` - it will show your local IP address
+3. Open that IP address with port 5000 in your phone's browser
+
+> **Note**: You may need to allow Python through Windows Firewall on first run.
 
 ## Topics Covered
 
