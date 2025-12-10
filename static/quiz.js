@@ -28,9 +28,14 @@ function toggleDarkMode() {
 async function loadQuestions() {
     try {
         const response = await fetch(`/api/questions/${sectionId}`);
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
         questions = await response.json();
         
-        if (questions.length === 0) {
+        if (!questions || questions.length === 0) {
             document.getElementById('quizContainer').innerHTML = `
                 <div class="empty-state">
                     <p>No questions found for this section.</p>
@@ -47,7 +52,8 @@ async function loadQuestions() {
         console.error('Error loading questions:', error);
         document.getElementById('quizContainer').innerHTML = `
             <div class="empty-state">
-                <p>Error loading questions. Please try again.</p>
+                <p>Error loading questions: ${error.message}</p>
+                <p style="font-size: 0.8rem; margin-top: 10px;">Section: ${sectionId}</p>
                 <a href="/" class="btn btn-primary">Back to Sections</a>
             </div>
         `;
