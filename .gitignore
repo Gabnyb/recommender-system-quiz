@@ -8,6 +8,10 @@ env/
 # Stats (personal progress)
 stats.json
 
+# Development files
+extract_pdf.py
+*.pdf
+
 # IDE
 .vscode/
 .idea/
