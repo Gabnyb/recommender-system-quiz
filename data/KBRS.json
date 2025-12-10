@@ -1,0 +1,158 @@
+[
+  {
+    "QuestionID": "KB-Q1",
+    "Section": "KBRS",
+    "Question": "Knowledge-based recommenders are most suitable when what is true?",
+    "Options": {
+      "A": "Items have many ratings",
+      "B": "Items are purchased frequently",
+      "C": "Users have explicit requirements about items",
+      "D": "Metadata is unavailable"
+    },
+    "Answer": "C",
+    "Explanation": "KBRS is ideal for domains where users have clear constraints or preferences."
+  },
+  {
+    "QuestionID": "KB-Q2",
+    "Section": "KBRS",
+    "Question": "Which domain is a classic example for knowledge-based recommendation?",
+    "Options": {
+      "A": "News",
+      "B": "Movies",
+      "C": "Houses",
+      "D": "Social media posts"
+    },
+    "Answer": "C",
+    "Explanation": "Housing decisions involve explicit constraints and high stakes, ideal for KBRS."
+  },
+  {
+    "QuestionID": "KB-Q3",
+    "Section": "KBRS",
+    "Question": "A user wants a camera under 500 with at least 30x zoom. This scenario fits which approach?",
+    "Options": {
+      "A": "Collaborative filtering",
+      "B": "Content-based filtering",
+      "C": "Knowledge-based recommendation",
+      "D": "Random recommendation"
+    },
+    "Answer": "C",
+    "Explanation": "Clear constraints make this a knowledge-based use case."
+  },
+  {
+    "QuestionID": "KB-Q4",
+    "Section": "KBRS",
+    "Question": "Constraints like f2 < 150 and f4 < 15 illustrate what method?",
+    "Options": {
+      "A": "Case-based reasoning",
+      "B": "Constraint-based filtering",
+      "C": "Hybrid switching",
+      "D": "Matrix factorization"
+    },
+    "Answer": "B",
+    "Explanation": "Constraint-based filtering applies explicit thresholds to item attributes."
+  },
+  {
+    "QuestionID": "KB-Q5",
+    "Section": "KBRS",
+    "Question": "Which statement about knowledge-based systems is correct?",
+    "Options": {
+      "A": "They require large rating datasets",
+      "B": "They are excellent for cold-start domains",
+      "C": "They rely on cosine similarity",
+      "D": "They fail when requirements are clear"
+    },
+    "Answer": "B",
+    "Explanation": "KBRS does not rely on past ratings, making them strong in cold-start scenarios."
+  },
+  {
+    "QuestionID": "KB-Q6",
+    "Section": "KBRS",
+    "Question": "Case-based reasoning primarily does what?",
+    "Options": {
+      "A": "Finds items with the highest predicted rating",
+      "B": "Chooses items based on user similarity",
+      "C": "Reuses solutions to similar past problems",
+      "D": "Combines content and collaborative signals"
+    },
+    "Answer": "C",
+    "Explanation": "CBR retrieves and adapts similar past cases as recommendations."
+  },
+  {
+    "QuestionID": "KB-Q7",
+    "Section": "KBRS",
+    "Question": "Which is a disadvantage of knowledge-based recommenders?",
+    "Options": {
+      "A": "Need many ratings",
+      "B": "Need extensive domain knowledge and modeling",
+      "C": "Cannot handle constraints",
+      "D": "Suffer from overspecialization"
+    },
+    "Answer": "B",
+    "Explanation": "Expert knowledge must be encoded manually, which is costly."
+  },
+  {
+    "QuestionID": "KB-Q8",
+    "Section": "KBRS",
+    "Question": "Which recommender type is least affected by rating sparsity?",
+    "Options": {
+      "A": "User-based CF",
+      "B": "Item-based CF",
+      "C": "Content-based filtering",
+      "D": "Knowledge-based filtering"
+    },
+    "Answer": "D",
+    "Explanation": "KBRS does not rely on rating data at all."
+  },
+  {
+    "QuestionID": "KB-Q9",
+    "Section": "KBRS",
+    "Question": "An insurance company sells expensive infrequent policies. Which recommender is most appropriate?",
+    "Options": {
+      "A": "User-based CF",
+      "B": "Item-based CF",
+      "C": "Knowledge-based RS",
+      "D": "Text-based CBF"
+    },
+    "Answer": "C",
+    "Explanation": "High-cost, low-frequency domains are ideal for knowledge-based approaches."
+  },
+  {
+    "QuestionID": "KB-Q10",
+    "Section": "KBRS",
+    "Question": "A system asks questions like 'How important is safety?' and 'What is your budget?' What is this?",
+    "Options": {
+      "A": "Active learning",
+      "B": "Interactive constraint-based recommendation",
+      "C": "Collaborative filtering",
+      "D": "Pearson weighted explanation"
+    },
+    "Answer": "B",
+    "Explanation": "Interactive constraint acquisition is a central part of KBRS."
+  },
+  {
+    "QuestionID": "KBRS-PDF-Q19",
+    "Section": "KBRS",
+    "Question": "A house recommender system asks users to specify the number of rooms, maximum price, and preferred neighborhood. What type of recommender system would be the most appropriate for this scenario?",
+    "Options": {
+      "A": "Collaborative filtering",
+      "B": "Content-based filtering",
+      "C": "Constraint-based",
+      "D": "Active learning"
+    },
+    "Answer": "C",
+    "Explanation": "Constraint-based systems allow users to specify hard constraints (requirements) for recommendations."
+  },
+  {
+    "QuestionID": "KBRS-PDF-Q20",
+    "Section": "KBRS",
+    "Question": "When a user specifies a price range of '$500-$800' and selects 'WiFi' as a required feature for a laptop, what type of conditions are these in a knowledge-based product filter?",
+    "Options": {
+      "A": "Hard constraints only",
+      "B": "Soft preferences only",
+      "C": "Hard constraints and soft preferences",
+      "D": "Filter conditions"
+    },
+    "Answer": "D",
+    "Explanation": "These are filter conditions in a knowledge-based product filter that narrow down the product space."
+  }
+]

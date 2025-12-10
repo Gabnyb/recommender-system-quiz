@@ -1,0 +1,248 @@
+[
+  {
+    "QuestionID": "EXPL-Q1",
+    "Section": "Explanations",
+    "Question": "Which of the following is NOT a goal of explanations in recommender systems?",
+    "Options": {
+      "A": "Increase transparency",
+      "B": "Increase trust",
+      "C": "Solve the cold-start problem",
+      "D": "Improve user satisfaction"
+    },
+    "Answer": "C",
+    "Explanation": "Cold-start is not a goal of explanations; explanations focus on trust, transparency, and satisfaction."
+  },
+  {
+    "QuestionID": "EXPL-Q2",
+    "Section": "Explanations",
+    "Question": "The statement 'This laptop lasts longer because it is designed to conserve energy' represents which explanation type?",
+    "Options": {
+      "A": "Scientific",
+      "B": "Functional",
+      "C": "Causal",
+      "D": "Intentional"
+    },
+    "Answer": "B",
+    "Explanation": "Functional explanations describe what something is for (purpose-based)."
+  },
+  {
+    "QuestionID": "EXPL-Q3",
+    "Section": "Explanations",
+    "Question": "'You rated Movie A highly, so we think you will like Movie B' is what type of explanation?",
+    "Options": {
+      "A": "Causal",
+      "B": "Scientific",
+      "C": "Functional",
+      "D": "Intentional"
+    },
+    "Answer": "A",
+    "Explanation": "This provides a cause-effect reasoning linking a user action to the recommendation."
+  },
+  {
+    "QuestionID": "EXPL-Q4",
+    "Section": "Explanations",
+    "Question": "'Your dad told you to do your homework' is an example of which type of explanation?",
+    "Options": {
+      "A": "Causal",
+      "B": "Functional",
+      "C": "Intentional",
+      "D": "Scientific"
+    },
+    "Answer": "C",
+    "Explanation": "Intentional explanations refer to motives or goals of agents."
+  },
+  {
+    "QuestionID": "EXPL-Q5",
+    "Section": "Explanations",
+    "Question": "'Laptop X has longer battery life because it uses advanced lithium-ion technology' is which explanation type?",
+    "Options": {
+      "A": "Functional",
+      "B": "Intentional",
+      "C": "Scientific",
+      "D": "Causal"
+    },
+    "Answer": "C",
+    "Explanation": "Scientific explanations rely on underlying scientific or technical principles."
+  },
+  {
+    "QuestionID": "EXPL-Q6",
+    "Section": "Explanations",
+    "Question": "Which explanation type focuses on motives and goals of agents?",
+    "Options": {
+      "A": "Scientific",
+      "B": "Intentional",
+      "C": "Functional",
+      "D": "Causal"
+    },
+    "Answer": "B",
+    "Explanation": "Intentional explanations describe goals, intentions, or desires."
+  },
+  {
+    "QuestionID": "EXPL-Q7",
+    "Section": "Explanations",
+    "Question": "Subtle changes in choice architecture that influence decisions without limiting options are called what?",
+    "Options": {
+      "A": "Explanation",
+      "B": "Nudge",
+      "C": "Constraint",
+      "D": "Switch"
+    },
+    "Answer": "B",
+    "Explanation": "A nudge alters how options are presented without removing freedom."
+  },
+  {
+    "QuestionID": "EXPL-Q8",
+    "Section": "Explanations",
+    "Question": "Which is an example of a social nudge?",
+    "Options": {
+      "A": "Editor's choice badge",
+      "B": "Default sort by relevance",
+      "C": "'80% of people your age watched this'",
+      "D": "A larger, more colorful button"
+    },
+    "Answer": "C",
+    "Explanation": "Social nudges use social proof about what similar people do."
+  },
+  {
+    "QuestionID": "EXPL-Q9",
+    "Section": "Explanations",
+    "Question": "How do nudges increase system effectiveness?",
+    "Options": {
+      "A": "By forcing users to pick certain items",
+      "B": "By limiting available options",
+      "C": "By subtly structuring choices to influence behavior",
+      "D": "By replacing explanations entirely"
+    },
+    "Answer": "C",
+    "Explanation": "Nudges guide user behavior through interface design, not coercion."
+  },
+  {
+    "QuestionID": "EXPL-Q10",
+    "Section": "Explanations",
+    "Question": "A preselected default option (e.g., standard shipping) is an example of what?",
+    "Options": {
+      "A": "Social nudge",
+      "B": "Default nudge",
+      "C": "Transparency nudge",
+      "D": "Intentional nudge"
+    },
+    "Answer": "B",
+    "Explanation": "Defaults are one of the most influential types of nudges."
+  },
+  {
+    "QuestionID": "EXPL-Q11",
+    "Section": "Explanations",
+    "Question": "Which statement about explanations in recommender systems is correct?",
+    "Options": {
+      "A": "They always improve RMSE",
+      "B": "They help users understand why an item was recommended",
+      "C": "They solve sparsity",
+      "D": "They remove the need for hybrids"
+    },
+    "Answer": "B",
+    "Explanation": "Explanations improve transparency and perceived system quality."
+  },
+  {
+    "QuestionID": "EXPL-Q12",
+    "Section": "Explanations",
+    "Question": "Adding explanations usually improves which aspect?",
+    "Options": {
+      "A": "Database size",
+      "B": "System transparency",
+      "C": "Data sparsity",
+      "D": "Pearson correlation"
+    },
+    "Answer": "B",
+    "Explanation": "Explanations help users understand the reasoning behind recommendations."
+  },
+  {
+    "QuestionID": "EXPL-Q13",
+    "Section": "Explanations",
+    "Question": "Which explanation type is most related to what something is used for?",
+    "Options": {
+      "A": "Intentional",
+      "B": "Functional",
+      "C": "Causal",
+      "D": "Scientific"
+    },
+    "Answer": "B",
+    "Explanation": "Functional explanations describe purpose or intended use."
+  },
+  {
+    "QuestionID": "EXPL-Q14",
+    "Section": "Explanations",
+    "Question": "Nudges tend to be most effective when what is true?",
+    "Options": {
+      "A": "They restrict actions",
+      "B": "Users cannot detect them at all",
+      "C": "The interface subtly encourages beneficial choices",
+      "D": "They replace all UI elements"
+    },
+    "Answer": "C",
+    "Explanation": "Nudges work by gently steering—not forcing—user decisions."
+  },
+  {
+    "QuestionID": "EXPL-Q15",
+    "Section": "Explanations",
+    "Question": "Highlighting certain items with a brighter color to draw attention is what?",
+    "Options": {
+      "A": "Visual nudge",
+      "B": "Scientific explanation",
+      "C": "Functional explanation",
+      "D": "Cold-start strategy"
+    },
+    "Answer": "A",
+    "Explanation": "Visual nudges guide attention through emphasis."
+  },
+  {
+    "QuestionID": "EXPL-PDF-Q16",
+    "Section": "Explanations",
+    "Question": "Which is NOT a goal for providing explanations in recommendations?",
+    "Options": {
+      "A": "Transparency",
+      "B": "Efficiency",
+      "C": "Cold starting"
+    },
+    "Answer": "C",
+    "Explanation": "Cold starting is not a goal for explanations. Goals include transparency, efficiency, and trustworthiness."
+  },
+  {
+    "QuestionID": "EXPL-PDF-Q17",
+    "Section": "Explanations",
+    "Question": "'You have to do your homework because your dad said so' is what type of explanation?",
+    "Options": {
+      "A": "Functional explanation",
+      "B": "Causal explanation",
+      "C": "Intentional explanation",
+      "D": "Scientific explanation"
+    },
+    "Answer": "C",
+    "Explanation": "Intentional explanations give reasons based on human behavior, motives, or goals."
+  },
+  {
+    "QuestionID": "EXPL-PDF-Q29",
+    "Section": "Explanations",
+    "Question": "'Laptop X has longer battery life due to advanced lithium-ion technology' is what type?",
+    "Options": {
+      "A": "Colorful explanation",
+      "B": "Intentional explanation",
+      "C": "Scientific explanation",
+      "D": "Functional explanation"
+    },
+    "Answer": "C",
+    "Explanation": "Scientific explanations are based on scientific principles and refutable theories."
+  },
+  {
+    "QuestionID": "EXPL-PDF-Q35",
+    "Section": "Explanations",
+    "Question": "Which type of explanation deals with the functions of systems?",
+    "Options": {
+      "A": "Scientific",
+      "B": "Functional",
+      "C": "Intentional",
+      "D": "Causal"
+    },
+    "Answer": "B",
+    "Explanation": "Functional explanations deal with the functions and purposes of systems."
+  }
+]

@@ -1,0 +1,171 @@
+[
+  {
+    "QuestionID": "HYB-Q1",
+    "Section": "Hybrid",
+    "Question": "What is the main goal of hybrid recommender systems?",
+    "Options": {
+      "A": "Replace all algorithms with a single model",
+      "B": "Combine strengths of multiple recommender techniques",
+      "C": "Increase sparsity",
+      "D": "Avoid using item features"
+    },
+    "Answer": "B",
+    "Explanation": "Hybrid systems leverage complementary strengths of different methods (e.g., CBF + CF)."
+  },
+  {
+    "QuestionID": "HYB-Q2",
+    "Section": "Hybrid",
+    "Question": "Which hybridization strategy switches between recommenders depending on the situation?",
+    "Options": {
+      "A": "Feature augmentation",
+      "B": "Weighted hybrid",
+      "C": "Switching",
+      "D": "Cascade"
+    },
+    "Answer": "C",
+    "Explanation": "Switching hybrids choose the best recommender for the context (e.g., new vs. experienced users)."
+  },
+  {
+    "QuestionID": "HYB-Q3",
+    "Section": "Hybrid",
+    "Question": "Which hybrid type combines outputs by averaging, weighting, or voting?",
+    "Options": {
+      "A": "Mixed",
+      "B": "Feature combination",
+      "C": "Cascade",
+      "D": "Weighted"
+    },
+    "Answer": "D",
+    "Explanation": "Weighted hybrids merge multiple recommendation scores using weights."
+  },
+  {
+    "QuestionID": "HYB-Q4",
+    "Section": "Hybrid",
+    "Question": "In which hybrid strategy does one recommender refine or filter the results of another?",
+    "Options": {
+      "A": "Cascade",
+      "B": "Feature combination",
+      "C": "Switching",
+      "D": "Weighted"
+    },
+    "Answer": "A",
+    "Explanation": "Cascade hybrids apply recommenders sequentially, where the second filters or refines candidates."
+  },
+  {
+    "QuestionID": "HYB-Q5",
+    "Section": "Hybrid",
+    "Question": "Using CF output as additional features for a CBF model is an example of:",
+    "Options": {
+      "A": "Feature augmentation",
+      "B": "Weighted hybrid",
+      "C": "Mixed hybrid",
+      "D": "Case-based reasoning"
+    },
+    "Answer": "A",
+    "Explanation": "Feature augmentation uses one recommender to create new feature vectors."
+  },
+  {
+    "QuestionID": "HYB-Q6",
+    "Section": "Hybrid",
+    "Question": "Which hybrid method displays multiple recommendation lists side-by-side?",
+    "Options": {
+      "A": "Mixed",
+      "B": "Cascade",
+      "C": "Switching",
+      "D": "Feature combination"
+    },
+    "Answer": "A",
+    "Explanation": "Mixed hybrids show outputs from multiple recommenders simultaneously."
+  },
+  {
+    "QuestionID": "HYB-Q7",
+    "Section": "Hybrid",
+    "Question": "Combining CF and CBF item similarity matrices into one is an example of:",
+    "Options": {
+      "A": "Mixed hybrid",
+      "B": "Feature combination",
+      "C": "Switching",
+      "D": "Personality-based RS"
+    },
+    "Answer": "B",
+    "Explanation": "Feature combination merges raw data/feature vectors from multiple sources."
+  },
+  {
+    "QuestionID": "HYB-Q8",
+    "Section": "Hybrid",
+    "Question": "A hybrid that first uses CBF to narrow candidates, then CF to rank them, is what type?",
+    "Options": {
+      "A": "Mixed",
+      "B": "Cascade",
+      "C": "Switching",
+      "D": "Knowledge-based"
+    },
+    "Answer": "B",
+    "Explanation": "Cascade hybrids operate sequentially to refine recommendations."
+  },
+  {
+    "QuestionID": "HYB-Q9",
+    "Section": "Hybrid",
+    "Question": "Which hybrid method is useful when one recommender performs better for cold-start users?",
+    "Options": {
+      "A": "Switching",
+      "B": "Feature augmentation",
+      "C": "Cascade",
+      "D": "Mixed"
+    },
+    "Answer": "A",
+    "Explanation": "Switching hybrids choose the algorithm that best fits the context (e.g., new users → CBF)."
+  },
+  {
+    "QuestionID": "HYB-Q10",
+    "Section": "Hybrid",
+    "Question": "Showing a CBF list and a CF list together in the UI is an example of what type of hybrid?",
+    "Options": {
+      "A": "Mixed",
+      "B": "Cascade",
+      "C": "Feature combination",
+      "D": "Switching"
+    },
+    "Answer": "A",
+    "Explanation": "Mixed hybrids present multiple rankings together."
+  },
+  {
+    "QuestionID": "Hybrid-PDF-Q21",
+    "Section": "Hybrid",
+    "Question": "In a <b>weighted hybrid</b> approach, two recommenders predict scores for Item A:<br><br><table><tr><th>Recommender</th><th>Predicted Score</th><th>Weight (β)</th></tr><tr><td>CF</td><td>4.0</td><td>0.6</td></tr><tr><td>CBF</td><td>3.5</td><td>0.4</td></tr></table><br>Using the formula: $Score_{hybrid} = β_{CF} × Score_{CF} + β_{CBF} × Score_{CBF}$<br><br>What is the <b>combined score</b>?",
+    "Options": {
+      "A": "3.7",
+      "B": "3.8",
+      "C": "3.75",
+      "D": "3.6"
+    },
+    "Answer": "B",
+    "Explanation": "$Score_{hybrid} = (0.6 × 4.0) + (0.4 × 3.5) = 2.4 + 1.4 = \\textbf{3.8}$"
+  },
+  {
+    "QuestionID": "Hybrid-PDF-Q27",
+    "Section": "Hybrid",
+    "Question": "In a parallelized hybridization design pattern, which phase is responsible for integrating the results from multiple recommendation techniques?",
+    "Options": {
+      "A": "Pre-processing",
+      "B": "Recommender",
+      "C": "Hybridization",
+      "D": "Scoring"
+    },
+    "Answer": "C",
+    "Explanation": "The hybridization phase integrates results from multiple recommendation techniques in a parallelized design."
+  },
+  {
+    "QuestionID": "Hybrid-PDF-Q30",
+    "Section": "Hybrid",
+    "Question": "Match each recommendation method with its <b>primary input</b>:<br><br><table><tr><th>#</th><th>Method</th></tr><tr><td>1</td><td>Collaborative Filtering (CF)</td></tr><tr><td>2</td><td>Content-Based Filtering (CBF)</td></tr><tr><td>3</td><td>Knowledge-Based (KB)</td></tr></table><br>Which mapping is correct?",
+    "Options": {
+      "A": "1→User ratings, 2→Item features, 3→User requirements",
+      "B": "1→Item features, 2→User ratings, 3→User requirements",
+      "C": "1→User requirements, 2→Item features, 3→User ratings",
+      "D": "1→User ratings, 2→User requirements, 3→Item features"
+    },
+    "Answer": "A",
+    "Explanation": "<b>CF</b> analyzes user ratings/behavior patterns<br><b>CBF</b> analyzes item features/attributes<br><b>KB</b> uses explicit user requirements and constraints"
+  }
+]

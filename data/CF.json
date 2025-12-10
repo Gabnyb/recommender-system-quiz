@@ -1,0 +1,301 @@
+[
+  {
+    "QuestionID": "CF-Q1",
+    "Section": "CF",
+    "Question": "Collaborative Filtering is mainly based on which idea?",
+    "Options": {
+      "A": "Items share similar content",
+      "B": "Users with similar tastes will like similar items",
+      "C": "All users have identical preferences",
+      "D": "Features are more important than ratings"
+    },
+    "Answer": "B",
+    "Explanation": "CF assumes similar users behave similarly."
+  },
+  {
+    "QuestionID": "CF-Q2",
+    "Section": "CF",
+    "Question": "In User-Based CF similarity is computed between what?",
+    "Options": {
+      "A": "Items",
+      "B": "Users",
+      "C": "Features",
+      "D": "Clusters"
+    },
+    "Answer": "B",
+    "Explanation": "UBCF compares user rating vectors."
+  },
+  {
+    "QuestionID": "CF-Q3",
+    "Section": "CF",
+    "Question": "Which similarity metric subtracts user mean ratings?",
+    "Options": {
+      "A": "Cosine",
+      "B": "Jaccard",
+      "C": "Pearson",
+      "D": "Manhattan"
+    },
+    "Answer": "C",
+    "Explanation": "Pearson centers ratings."
+  },
+  {
+    "QuestionID": "CF-Q4",
+    "Section": "CF",
+    "Question": "Given two users with rating vectors:<br><br><table><tr><th>User</th><th>Item 1</th><th>Item 2</th></tr><tr><td><b>U1</b></td><td>5</td><td>3</td></tr><tr><td><b>U2</b></td><td>4</td><td>2</td></tr></table><br>What is the <b>cosine similarity</b> between U1 and U2?<br><br><i>Formula: $\\cos(\\vec{a}, \\vec{b}) = \\frac{\\vec{a} \\cdot \\vec{b}}{||\\vec{a}|| \\cdot ||\\vec{b}||}$</i>",
+    "Options": {
+      "A": "1.00",
+      "B": "0.50",
+      "C": "0.90",
+      "D": "0.80"
+    },
+    "Answer": "A",
+    "Explanation": "The vectors (5,3) and (4,2) are scalar multiples of each other (both lie on the same line through origin). Since $\\vec{U2} = 0.8 \\times \\vec{U1}$ approximately, they point in the same direction, giving cosine = 1.<br><br>Calculation: $\\frac{5×4 + 3×2}{\\sqrt{5²+3²} × \\sqrt{4²+2²}} = \\frac{26}{\\sqrt{34} × \\sqrt{20}} ≈ 0.997 ≈ 1$"
+  },
+  {
+    "QuestionID": "CF-Q5",
+    "Section": "CF",
+    "Question": "A key advantage of Item-Based CF over User-Based CF is:",
+    "Options": {
+      "A": "Item similarities change frequently",
+      "B": "Item relations are more stable",
+      "C": "Users always cooperate",
+      "D": "Pearson is not allowed in IBCF"
+    },
+    "Answer": "B",
+    "Explanation": "Items are fewer and more stable; item-item similarities change less."
+  },
+  {
+    "QuestionID": "CF-Q6",
+    "Section": "CF",
+    "Question": "Grey sheep users are:",
+    "Options": {
+      "A": "Users with only one rating",
+      "B": "Users with inconsistent or unique preferences",
+      "C": "New users",
+      "D": "Users with missing items"
+    },
+    "Answer": "B",
+    "Explanation": "Grey sheep users have inconsistent patterns and are difficult to match."
+  },
+  {
+    "QuestionID": "CF-Q7",
+    "Section": "CF",
+    "Question": "Which of the following is a weakness of CF?",
+    "Options": {
+      "A": "Requires item metadata",
+      "B": "Overspecialization",
+      "C": "Cold start for new users and new items",
+      "D": "Requires extensive text preprocessing"
+    },
+    "Answer": "C",
+    "Explanation": "CF struggles when new items or users have no ratings."
+  },
+  {
+    "QuestionID": "CF-Q8",
+    "Section": "CF",
+    "Question": "Item-based CF is preferred when:",
+    "Options": {
+      "A": "Number of users >> number of items",
+      "B": "Number of items >> number of users",
+      "C": "No items have features",
+      "D": "There are no ratings"
+    },
+    "Answer": "A",
+    "Explanation": "Item-based CF benefits from many users rating fewer items."
+  },
+  {
+    "QuestionID": "CF-Q9",
+    "Section": "CF",
+    "Question": "Which statement is TRUE?",
+    "Options": {
+      "A": "UBCF always outperforms IBCF",
+      "B": "IBCF relies on comparing users",
+      "C": "Pearson is scale-invariant",
+      "D": "Cosine similarity subtracts user means"
+    },
+    "Answer": "C",
+    "Explanation": "Pearson correlation normalizes differences in rating scales."
+  },
+  {
+    "QuestionID": "CF-Q10",
+    "Section": "CF",
+    "Question": "The user-based prediction formula begins with:",
+    "Options": {
+      "A": "Target item’s average",
+      "B": "Neighbors’ average",
+      "C": "Target user’s average rating",
+      "D": "Zero"
+    },
+    "Answer": "C",
+    "Explanation": "Predictions begin at the user's mean rating then adjust with weighted deviations."
+  },
+  {
+    "QuestionID": "CF-Q11",
+    "Section": "CF",
+    "Question": "Consider two users who rated items A and B as follows:<br><br><table><tr><th>User</th><th>Item A</th><th>Item B</th></tr><tr><td><b>U1</b></td><td>5</td><td>3</td></tr><tr><td><b>U2</b></td><td>4</td><td>2</td></tr></table><br>Both users show the same <i>relative difference</i> of 2 points between items. What is their <b>Pearson correlation</b>?",
+    "Options": {
+      "A": "1",
+      "B": "0",
+      "C": "-1",
+      "D": "0.5"
+    },
+    "Answer": "A",
+    "Explanation": "Pearson correlation measures the linear relationship between rating patterns. Since both users rate Item A exactly 2 points higher than Item B, their rating patterns are perfectly correlated, yielding Pearson = 1."
+  },
+  {
+    "QuestionID": "CF-Q12",
+    "Section": "CF",
+    "Question": "Which CF method is more scalable for very large user populations?",
+    "Options": {
+      "A": "User-based CF",
+      "B": "Item-based CF",
+      "C": "Content-based filtering",
+      "D": "Matrix factorization"
+    },
+    "Answer": "B",
+    "Explanation": "Item-based CF scales better because items are fewer and more stable than users."
+  },
+  {
+    "QuestionID": "CF-Q13",
+    "Section": "CF",
+    "Question": "What problem occurs when new items have no ratings?",
+    "Options": {
+      "A": "Grey sheep problem",
+      "B": "New-item cold start",
+      "C": "Popularity bias",
+      "D": "Dimensionality issue"
+    },
+    "Answer": "B",
+    "Explanation": "CF cannot recommend unrated items due to missing collaborative signals."
+  },
+  {
+    "QuestionID": "CF-Q14",
+    "Section": "CF",
+    "Question": "Which rating normalization is required before computing Pearson correlation?",
+    "Options": {
+      "A": "Divide each vector by its norm",
+      "B": "Subtract item means",
+      "C": "Subtract user means",
+      "D": "Apply log-scaling"
+    },
+    "Answer": "C",
+    "Explanation": "Pearson correlation centers by subtracting the user's mean rating."
+  },
+  {
+    "QuestionID": "CF-Q15",
+    "Section": "CF",
+    "Question": "What does k represent in kNN-based CF?",
+    "Options": {
+      "A": "Number of items rated",
+      "B": "Number of neighbors considered",
+      "C": "Number of latent factors",
+      "D": "Number of missing values"
+    },
+    "Answer": "B",
+    "Explanation": "k is the number of nearest neighbors used in predictions."
+  },
+  {
+    "QuestionID": "CF-Q16",
+    "Section": "CF",
+    "Question": "Which technique solves CF sparsity by discovering latent structure?",
+    "Options": {
+      "A": "Matrix factorization",
+      "B": "Jaccard similarity",
+      "C": "TF-IDF weighting",
+      "D": "Stopword removal"
+    },
+    "Answer": "A",
+    "Explanation": "Matrix factorization compresses user–item data into latent factors, reducing sparsity."
+  },
+  {
+    "QuestionID": "CF-Q17",
+    "Section": "CF",
+    "Question": "What is a disadvantage of user-based CF?",
+    "Options": {
+      "A": "Requires expensive user–user similarity computation",
+      "B": "Cannot compute cosine similarity",
+      "C": "Does not support new users",
+      "D": "Requires item attributes"
+    },
+    "Answer": "A",
+    "Explanation": "User-based CF requires large, frequently updated similarity matrices."
+  },
+  {
+    "QuestionID": "CF-Q18",
+    "Section": "CF",
+    "Question": "Which weighting scheme adjusts neighbor contributions based on similarity strength?",
+    "Options": {
+      "A": "Binary weighting",
+      "B": "Inverse frequency weighting",
+      "C": "Similarity-weighted averaging",
+      "D": "Popularity weighting"
+    },
+    "Answer": "C",
+    "Explanation": "Predictions are computed using a weighted sum of neighbors' deviations, weighted by similarity."
+  },
+  {
+    "QuestionID": "CF-Q19",
+    "Section": "CF",
+    "Question": "Why does item-based CF often outperform user-based CF in e-commerce?",
+    "Options": {
+      "A": "Users change preferences often, items do not",
+      "B": "Items never change",
+      "C": "CF requires item metadata",
+      "D": "Pearson cannot be used for items"
+    },
+    "Answer": "A",
+    "Explanation": "User behavior shifts quickly, whereas item relationships remain stable."
+  },
+  {
+    "QuestionID": "CF-Q20",
+    "Section": "CF",
+    "Question": "What problem do 'grey sheep' users cause?",
+    "Options": {
+      "A": "They rate all items identically",
+      "B": "They have inconsistent or unique preferences that match few others",
+      "C": "They never rate any items",
+      "D": "They rate only popular items"
+    },
+    "Answer": "B",
+    "Explanation": "Grey sheep users cannot be matched well because their tastes do not align with any group."
+  },
+  {
+    "QuestionID": "CF-PDF-Q2",
+    "Section": "CF",
+    "Question": "What type of recommender system uses a user-item rating matrix to find similar users or items?",
+    "Options": {
+      "A": "Content-Based Filtering (CBF)",
+      "B": "Collaborative Filtering (CF)",
+      "C": "Knowledge-Based Filtering",
+      "D": "Hybrid Filtering"
+    },
+    "Answer": "B",
+    "Explanation": "Collaborative Filtering uses user-item rating matrices to identify patterns among users or items."
+  },
+  {
+    "QuestionID": "CF-PDF-Q13",
+    "Section": "CF",
+    "Question": "The cold start problem in CF refers to difficulty when:",
+    "Options": {
+      "A": "The system has too many ratings",
+      "B": "New users or items have no/few ratings",
+      "C": "Items have too much metadata",
+      "D": "Users rate items too frequently"
+    },
+    "Answer": "B",
+    "Explanation": "Cold start occurs when CF cannot produce accurate recommendations due to insufficient rating data for new users or items."
+  },
+  {
+    "QuestionID": "CF-PDF-Q34",
+    "Section": "CF",
+    "Question": "Calculate the <b>predicted rating</b> for User 1 on Item 5 using the weighted average formula:<br><br><table><tr><th></th><th>Item 5 Rating</th><th>Avg Rating</th><th>Sim with User 1</th></tr><tr><td><b>User 1</b></td><td>???</td><td>4.0</td><td>—</td></tr><tr><td><b>User 2</b></td><td>3</td><td>2.4</td><td>0.85</td></tr><tr><td><b>User 3</b></td><td>4</td><td>3.2</td><td>0.0</td></tr></table><br><i>Formula: $pred(u,i) = \\bar{r}_u + \\frac{\\sum_{v \\in N} sim(u,v) \\cdot (r_{v,i} - \\bar{r}_v)}{\\sum_{v \\in N} |sim(u,v)|}$</i>",
+    "Options": {
+      "A": "4.0",
+      "B": "4.6",
+      "C": "3.5",
+      "D": "4.51"
+    },
+    "Answer": "B",
+    "Explanation": "Using the formula:<br><br>$pred = 4.0 + \\frac{0.85 \\times (3 - 2.4) + 0.0 \\times (4 - 3.2)}{0.85 + 0.0}$<br><br>$= 4.0 + \\frac{0.85 \\times 0.6 + 0}{0.85} = 4.0 + \\frac{0.51}{0.85} = 4.0 + 0.6 = \\textbf{4.6}$"
+  }
+]

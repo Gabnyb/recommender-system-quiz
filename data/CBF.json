@@ -1,0 +1,236 @@
+[
+  {
+    "QuestionID": "CBF-Q1",
+    "Section": "CBF",
+    "Question": "What is the main idea of content-based filtering?",
+    "Options": {
+      "A": "Recommend items similar to those liked by similar users",
+      "B": "Recommend items based on item–item co-occurrence",
+      "C": "Recommend items similar to those the user liked in the past",
+      "D": "Recommend the most popular items"
+    },
+    "Answer": "C",
+    "Explanation": "CBF analyzes item features and matches them to the user's known preferences."
+  },
+  {
+    "QuestionID": "CBF-Q2",
+    "Section": "CBF",
+    "Question": "Which preprocessing step reduces different forms of a word to a common base?",
+    "Options": {
+      "A": "Stemming",
+      "B": "Lemmatization",
+      "C": "Tokenization",
+      "D": "Stopword removal"
+    },
+    "Answer": "B",
+    "Explanation": "Lemmatization converts words to their dictionary base form."
+  },
+  {
+    "QuestionID": "CBF-Q3",
+    "Section": "CBF",
+    "Question": "TF-IDF assigns high weight to terms that are:",
+    "Options": {
+      "A": "Frequent in all documents",
+      "B": "Rare across documents but frequent in a specific item",
+      "C": "Stopwords",
+      "D": "Irrelevant"
+    },
+    "Answer": "B",
+    "Explanation": "IDF boosts rare terms; TF boosts frequent item-specific terms."
+  },
+  {
+    "QuestionID": "CBF-Q4",
+    "Section": "CBF",
+    "Question": "Which vector similarity metric is most commonly used in CBF?",
+    "Options": {
+      "A": "Cosine similarity",
+      "B": "Euclidean distance",
+      "C": "Jaccard index",
+      "D": "Pearson correlation"
+    },
+    "Answer": "A",
+    "Explanation": "Cosine similarity measures angle between feature vectors."
+  },
+  {
+    "QuestionID": "CBF-Q5",
+    "Section": "CBF",
+    "Question": "What is overspecialization in CBF?",
+    "Options": {
+      "A": "Recommending items too different from user’s taste",
+      "B": "Recommending only items very similar to previously liked ones",
+      "C": "Recommending only popular items",
+      "D": "Recommending items randomly"
+    },
+    "Answer": "B",
+    "Explanation": "CBF may fail to introduce novelty due to feature-based similarity."
+  },
+  {
+    "QuestionID": "CBF-Q6",
+    "Section": "CBF",
+    "Question": "Which issue arises when items lack descriptive metadata?",
+    "Options": {
+      "A": "User cold-start",
+      "B": "Item cold-start",
+      "C": "Feature sparsity",
+      "D": "Overfitting"
+    },
+    "Answer": "C",
+    "Explanation": "Without good metadata, CBF cannot build effective item profiles."
+  },
+  {
+    "QuestionID": "CBF-Q7",
+    "Section": "CBF",
+    "Question": "The user profile in CBF is typically constructed by what method?",
+    "Options": {
+      "A": "Averaging feature vectors of liked items",
+      "B": "Clustering all items",
+      "C": "Predicting missing ratings",
+      "D": "Matrix factorization"
+    },
+    "Answer": "A",
+    "Explanation": "User profiles commonly aggregate item feature vectors."
+  },
+  {
+    "QuestionID": "CBF-Q8",
+    "Section": "CBF",
+    "Question": "What is cosine similarity when two vectors are multiples of each other?",
+    "Options": {
+      "A": "0",
+      "B": "0.5",
+      "C": "1",
+      "D": "Undefined"
+    },
+    "Answer": "C",
+    "Explanation": "Parallel vectors yield cosine similarity = 1."
+  },
+  {
+    "QuestionID": "CBF-Q9",
+    "Section": "CBF",
+    "Question": "What is a common disadvantage of TF-IDF vectors?",
+    "Options": {
+      "A": "They cannot represent text",
+      "B": "They ignore word order and context",
+      "C": "They require deep learning",
+      "D": "They increase sparsity artificially"
+    },
+    "Answer": "B",
+    "Explanation": "TF-IDF treats text as a bag of words, losing semantic structure."
+  },
+  {
+    "QuestionID": "CBF-Q10",
+    "Section": "CBF",
+    "Question": "Which step removes common non-informative words?",
+    "Options": {
+      "A": "Stemming",
+      "B": "Stopword removal",
+      "C": "Lemmatization",
+      "D": "TF scaling"
+    },
+    "Answer": "B",
+    "Explanation": "Stopwords are removed to reduce noise."
+  },
+  {
+    "QuestionID": "CBF-Q11",
+    "Section": "CBF",
+    "Question": "Why might CBF struggle with new users?",
+    "Options": {
+      "A": "Users have no ratings or liked items yet",
+      "B": "Items lack reviews",
+      "C": "Metadata is too rich",
+      "D": "Entropy is too high"
+    },
+    "Answer": "A",
+    "Explanation": "CBF needs initial user preferences to construct a profile."
+  },
+  {
+    "QuestionID": "CBF-Q12",
+    "Section": "CBF",
+    "Question": "What is a key advantage of CBF over CF?",
+    "Options": {
+      "A": "No need for item metadata",
+      "B": "Can recommend new or unpopular items",
+      "C": "Automatically incorporates social influence",
+      "D": "Does not require any similarity metric"
+    },
+    "Answer": "B",
+    "Explanation": "CBF uses item features, so cold-start items can still be recommended."
+  },
+  {
+    "QuestionID": "CBF-Q13",
+    "Section": "CBF",
+    "Question": "Which of the following is TRUE for TF-IDF?",
+    "Options": {
+      "A": "IDF decreases weight for rare terms",
+      "B": "TF decreases with term frequency",
+      "C": "IDF increases weight for rare terms",
+      "D": "TF-IDF removes the need for normalization"
+    },
+    "Answer": "C",
+    "Explanation": "IDF = log(N/df); rare terms (small df) yield high IDF."
+  },
+  {
+    "QuestionID": "CBF-Q14",
+    "Section": "CBF",
+    "Question": "In CBF, similarity between user profile and item vector is computed using:",
+    "Options": {
+      "A": "Pearson correlation",
+      "B": "Cosine similarity",
+      "C": "RMSE",
+      "D": "Recall"
+    },
+    "Answer": "B",
+    "Explanation": "CBF typically uses cosine similarity for comparing profiles and items."
+  },
+  {
+    "QuestionID": "CBF-Q15",
+    "Section": "CBF",
+    "Question": "What is a limitation of using linear weighted profiles?",
+    "Options": {
+      "A": "They cannot handle binary features",
+      "B": "They assume feature importance is additive and independent",
+      "C": "They require deep learning",
+      "D": "They produce extremely dense vectors"
+    },
+    "Answer": "B",
+    "Explanation": "Linear models assume independence and additive contributions of features."
+  },
+  {
+    "QuestionID": "CBF-PDF-Q3",
+    "Section": "CBF",
+    "Question": "Which option represents the result of lemmatization applied to 'am', 'are', and 'is'?",
+    "Options": {
+      "A": "am, are, is → was",
+      "B": "am, are, is → been",
+      "C": "am, are, is → being",
+      "D": "am, are, is → be"
+    },
+    "Answer": "D",
+    "Explanation": "Lemmatization reduces words to their dictionary base form. 'am', 'are', 'is' all become 'be'."
+  },
+  {
+    "QuestionID": "CBF-PDF-Q25",
+    "Section": "CBF",
+    "Question": "Which recommendation approach can utilize visual features extracted from movie items?",
+    "Options": {
+      "A": "Collaborative Filtering",
+      "B": "SVD",
+      "C": "Content-based Filtering",
+      "D": "Random"
+    },
+    "Answer": "C",
+    "Explanation": "Content-based Filtering can utilize content features like visual or audio features extracted from items."
+  },
+  {
+    "QuestionID": "CBF-PDF-Q31",
+    "Section": "CBF",
+    "Question": "Why is using Term Frequency (TF) alone not a good approach for modeling documents?",
+    "Options": {
+      "A": "It assumes all terms have similar importance",
+      "B": "It doesn't consider the length of the document",
+      "C": "It ignores the uniqueness of terms across documents",
+      "D": "All of the above"
+    },
+    "Answer": "D",
+    "Explanation": "TF alone has multiple limitations: treating all terms equally, not accounting for document length, and ignoring term uniqueness."
+  }
+]

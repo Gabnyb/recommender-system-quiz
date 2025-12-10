@@ -1,0 +1,198 @@
+[
+  {
+    "QuestionID": "EVAL-Q1",
+    "Section": "Evaluation",
+    "Question": "What is the name of the evaluation metric RMSE?",
+    "Options": {
+      "A": "Root Mean Squared Error",
+      "B": "Relative Mean Standard Error",
+      "C": "Random Mean Squared Estimation",
+      "D": "Rating Mean Similarity Error"
+    },
+    "Answer": "A",
+    "Explanation": "RMSE stands for Root Mean Squared Error, a common metric for evaluating prediction accuracy."
+  },
+  {
+    "QuestionID": "EVAL-Q2",
+    "Section": "Evaluation",
+    "Question": "What is the challenge addressed by 'regularization' when training a recommender model?",
+    "Options": {
+      "A": "Cold start problem",
+      "B": "Overfitting",
+      "C": "Data sparsity",
+      "D": "Scalability"
+    },
+    "Answer": "B",
+    "Explanation": "Regularization addresses the overfitting challenge by preventing the model from memorizing training data."
+  },
+  {
+    "QuestionID": "EVAL-Q3",
+    "Section": "Evaluation",
+    "Question": "What is the primary objective of 'rating prediction' algorithms in recommender systems?",
+    "Options": {
+      "A": "To group items based on their profile image",
+      "B": "To create visual descriptions for items",
+      "C": "To find the number of items in the dataset",
+      "D": "To achieve accurate predictions of user ratings",
+      "E": "To count the total number of ratings in the dataset"
+    },
+    "Answer": "D",
+    "Explanation": "The primary objective of rating prediction algorithms is to minimize prediction error between known and predicted ratings."
+  },
+  {
+    "QuestionID": "EVAL-Q4",
+    "Section": "Evaluation",
+    "Question": "If the primary task is to predict 'exact' ratings, which metrics are most suitable?",
+    "Options": {
+      "A": "Precision and Recall",
+      "B": "MAE and RMSE",
+      "C": "F1-Score",
+      "D": "MAP"
+    },
+    "Answer": "B",
+    "Explanation": "MAE and RMSE measure the difference between predicted and actual ratings, making them suitable for rating prediction tasks."
+  },
+  {
+    "QuestionID": "EVAL-Q5",
+    "Section": "Evaluation",
+    "Question": "What is a potential disadvantage of A/B testing when evaluating recommender systems?",
+    "Options": {
+      "A": "It's too fast",
+      "B": "Risk of losing customers if recommendation quality is poor",
+      "C": "It doesn't require real users",
+      "D": "It only works offline"
+    },
+    "Answer": "B",
+    "Explanation": "If one model in A/B testing provides poor recommendations, users might be dissatisfied, leading to potential customer loss."
+  },
+  {
+    "QuestionID": "EVAL-Q6",
+    "Section": "Evaluation",
+    "Question": "Which metric is suitable for evaluating Top-N recommendations?",
+    "Options": {
+      "A": "F1 score",
+      "B": "Root Mean Square Error",
+      "C": "Mean Absolute Error",
+      "D": "Sparsity"
+    },
+    "Answer": "A",
+    "Explanation": "F1 score (harmonic mean of Precision and Recall) is suitable for evaluating ranked lists of Top-N items."
+  },
+  {
+    "QuestionID": "EVAL-Q7",
+    "Section": "Evaluation",
+    "Question": "Given the confusion matrix below, what metric does the formula $\\frac{TP}{TP + FN}$ calculate?<br><br><table><tr><th></th><th>Predicted Positive</th><th>Predicted Negative</th></tr><tr><td><b>Actual Positive</b></td><td>TP (True Positive)</td><td>FN (False Negative)</td></tr><tr><td><b>Actual Negative</b></td><td>FP (False Positive)</td><td>TN (True Negative)</td></tr></table>",
+    "Options": {
+      "A": "Precision",
+      "B": "Recall",
+      "C": "F1 Score",
+      "D": "Accuracy"
+    },
+    "Answer": "B",
+    "Explanation": "Recall = $\\frac{TP}{TP+FN}$ measures the proportion of actual positives that were correctly identified. It answers: <i>'Of all relevant items, how many did we recommend?'</i>"
+  },
+  {
+    "QuestionID": "EVAL-Q8",
+    "Section": "Evaluation",
+    "Question": "What does Precision measure in recommender systems?",
+    "Options": {
+      "A": "Proportion of relevant items that are recommended",
+      "B": "Proportion of recommended items that are relevant",
+      "C": "Total number of recommendations",
+      "D": "Average rating error"
+    },
+    "Answer": "B",
+    "Explanation": "Precision measures the proportion of recommended items that are actually relevant (good)."
+  },
+  {
+    "QuestionID": "EVAL-Q9",
+    "Section": "Evaluation",
+    "Question": "What does Recall measure in recommender systems?",
+    "Options": {
+      "A": "Proportion of relevant items that are recommended",
+      "B": "Proportion of recommended items that are relevant",
+      "C": "Total number of recommendations",
+      "D": "Average rating error"
+    },
+    "Answer": "A",
+    "Explanation": "Recall measures the proportion of all relevant (good) items that are recommended."
+  },
+  {
+    "QuestionID": "EVAL-Q10",
+    "Section": "Evaluation",
+    "Question": "Given the following rating predictions, calculate the <b>RMSE</b>:<br><br><table><tr><th>Item</th><th>True Rating</th><th>Predicted Rating</th></tr><tr><td>1</td><td>5</td><td>4.5</td></tr><tr><td>2</td><td>4</td><td>5</td></tr><tr><td>3</td><td>5</td><td>5</td></tr><tr><td>4</td><td>3</td><td>5</td></tr><tr><td>5</td><td>5</td><td>4.5</td></tr></table><br><i>Formula: $RMSE = \\sqrt{\\frac{1}{n}\\sum_{i=1}^{n}(r_i - \\hat{r}_i)^2}$</i>",
+    "Options": {
+      "A": "1.1",
+      "B": "1.04",
+      "C": "0.55",
+      "D": "2.35"
+    },
+    "Answer": "B",
+    "Explanation": "Sum of squared errors: $(5-4.5)^2 + (4-5)^2 + (5-5)^2 + (3-5)^2 + (5-4.5)^2 = 0.25 + 1 + 0 + 4 + 0.25 = 5.5$<br><br>$RMSE = \\sqrt{5.5/5} = \\sqrt{1.1} ≈ 1.04$"
+  },
+  {
+    "QuestionID": "EVAL-Q11",
+    "Section": "Evaluation",
+    "Question": "A dataset has the following characteristics:<br><br><table><tr><th>Metric</th><th>Value</th></tr><tr><td>Number of Ratings (|R|)</td><td>100,000</td></tr><tr><td>Number of Users (|U|)</td><td>943</td></tr><tr><td>Number of Items (|I|)</td><td>1,682</td></tr></table><br>Using the <b>sparsity formula</b>: $Sparsity = 1 - \\frac{|R|}{|I| \\times |U|}$<br><br>What is the sparsity of this dataset?",
+    "Options": {
+      "A": "0.063 (6.3%)",
+      "B": "0.936 (93.6%)",
+      "C": "0.5 (50%)",
+      "D": "0.1 (10%)"
+    },
+    "Answer": "B",
+    "Explanation": "Total possible ratings = $943 \\times 1682 = 1,586,126$<br><br>Density = $\\frac{100,000}{1,586,126} ≈ 0.063$<br><br>Sparsity = $1 - 0.063 = 0.936$ or <b>93.6%</b> of ratings are missing."
+  },
+  {
+    "QuestionID": "EVAL-Q12",
+    "Section": "Evaluation",
+    "Question": "A movie recommender system made the following recommendations:<br><br><table><tr><th>Recommended Movies</th><th>Actually Good?</th></tr><tr><td>Movie A</td><td>✅ Yes</td></tr><tr><td>Movie B</td><td>❌ No</td></tr><tr><td>Movie C</td><td>✅ Yes</td></tr><tr><td>Movie D</td><td>❌ No</td></tr><tr><td>Movie E</td><td>✅ Yes</td></tr><tr><td>Movie F</td><td>❌ No</td></tr></table><br>There are <b>5 total good movies</b> in the test set. What is the <b>Precision</b>?<br><br><i>Formula: $Precision = \\frac{\\text{Relevant Recommended}}{\\text{Total Recommended}}$</i>",
+    "Options": {
+      "A": "0.5 (50%)",
+      "B": "0.6 (60%)",
+      "C": "0.54 (54%)",
+      "D": "0.83 (83%)"
+    },
+    "Answer": "A",
+    "Explanation": "Precision = $\\frac{3}{6} = 0.5$ (3 good movies out of 6 recommended)<br><br>This means 50% of the recommendations were relevant."
+  },
+  {
+    "QuestionID": "EVAL-Q13",
+    "Section": "Evaluation",
+    "Question": "Using the same movie recommender scenario (3 good movies recommended, 5 total good movies exist), what is the <b>Recall</b>?<br><br><i>Formula: $Recall = \\frac{\\text{Relevant Recommended}}{\\text{Total Relevant}}$</i>",
+    "Options": {
+      "A": "0.5 (50%)",
+      "B": "0.6 (60%)",
+      "C": "0.54 (54%)",
+      "D": "0.83 (83%)"
+    },
+    "Answer": "B",
+    "Explanation": "Recall = $\\frac{3}{5} = 0.6$ (3 good movies captured out of 5 total good movies)<br><br>This means 60% of all relevant movies were recommended."
+  },
+  {
+    "QuestionID": "EVAL-Q14",
+    "Section": "Evaluation",
+    "Question": "Given <b>Precision = 0.5</b> and <b>Recall = 0.6</b>, calculate the <b>F1 Score</b>.<br><br><i>Formula: $F1 = 2 \\times \\frac{Precision \\times Recall}{Precision + Recall}$</i>",
+    "Options": {
+      "A": "0.50",
+      "B": "0.60",
+      "C": "0.54",
+      "D": "0.55"
+    },
+    "Answer": "C",
+    "Explanation": "$F1 = 2 \\times \\frac{0.5 \\times 0.6}{0.5 + 0.6} = 2 \\times \\frac{0.3}{1.1} = \\frac{0.6}{1.1} ≈ 0.54$<br><br>F1 is the harmonic mean of Precision and Recall, balancing both metrics."
+  },
+  {
+    "QuestionID": "EVAL-Q15",
+    "Section": "Evaluation",
+    "Question": "Which type of evaluation uses historical data without real users?",
+    "Options": {
+      "A": "Online evaluation",
+      "B": "Offline evaluation",
+      "C": "A/B testing",
+      "D": "User study"
+    },
+    "Answer": "B",
+    "Explanation": "Offline evaluation uses historical data to simulate user behavior without deploying to real users."
+  }
+]

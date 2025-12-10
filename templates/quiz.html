@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - {{ section_name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- MathJax for rendering math formulas -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+    <script>
+        // Initialize dark mode from localStorage before page loads
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <a href="{{ url_for('index') }}" class="back-link">← Back to Sections</a>
+                <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+            </div>
+            <h1>{{ section_name }}</h1>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="stats">
+                <span id="questionCounter">Question 1 of ?</span>
+                <span id="scoreDisplay">Score: 0/0</span>
+            </div>
+        </header>
+
+        <main>
+            <div id="quizContainer" class="quiz-container">
+                <div class="loading">Loading questions...</div>
+            </div>
+
+            <div id="resultsContainer" class="results-container hidden">
+                <h2>🎉 Quiz Complete!</h2>
+                <div class="final-score">
+                    <span id="finalScore">0</span> / <span id="totalQuestions">0</span>
+                </div>
+                <p id="scorePercentage"></p>
+                <div id="mistakesSummary" class="mistakes-summary"></div>
+                <div class="results-actions">
+                    <button class="btn btn-primary" onclick="restartQuiz()">🔄 Try Again</button>
+                    <a href="/quiz/mistakes" class="btn btn-warning">📝 Review All Mistakes</a>
+                    <a href="{{ url_for('index') }}" class="btn btn-secondary">📚 Choose Another Section</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const sectionId = "{{ section_id }}";
+    </script>
+    <script src="{{ url_for('static', filename='quiz.js') }}"></script>
+</body>
+</html>

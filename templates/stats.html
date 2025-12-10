@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Statistics</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script>
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <a href="{{ url_for('index') }}" class="back-link">← Back to Home</a>
+                <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+            </div>
+            <h1>📊 Progress Statistics</h1>
+        </header>
+
+        <main>
+            <div class="stats-container">
+                <!-- Overall Stats -->
+                <div class="stats-card">
+                    <h2>📈 Overall Performance</h2>
+                    <div class="stats-grid" id="overallStats">
+                        <div class="stat-item">
+                            <span class="stat-value" id="totalSessions">0</span>
+                            <span class="stat-label">Total Sessions</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" id="avgScore">0%</span>
+                            <span class="stat-label">Average Score</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" id="totalQuestions">0</span>
+                            <span class="stat-label">Questions Answered</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" id="totalMistakes">0</span>
+                            <span class="stat-label">Unique Mistakes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section Performance -->
+                <div class="stats-card">
+                    <h2>📚 Performance by Section</h2>
+                    <div id="sectionStats" class="section-stats">
+                        <p class="loading">Loading...</p>
+                    </div>
+                </div>
+
+                <!-- Recent Sessions -->
+                <div class="stats-card">
+                    <h2>🕐 Recent Sessions</h2>
+                    <div id="recentSessions" class="recent-sessions">
+                        <p class="loading">Loading...</p>
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="stats-actions">
+                    <a href="/quiz/mistakes" class="btn btn-primary">📝 Review Mistakes</a>
+                    <button class="btn btn-danger" onclick="clearAllStats()">🗑️ Clear All Data</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            document.documentElement.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        }
+        
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+
+        async function loadStats() {
+            try {
+                const response = await fetch('/api/stats');
+                const stats = await response.json();
+                renderStats(stats);
+            } catch (e) {
+                console.error('Error loading stats:', e);
+            }
+        }
+
+        function renderStats(stats) {
+            // Overall stats
+            const sessions = stats.sessions || [];
+            document.getElementById('totalSessions').textContent = sessions.length;
+            
+            if (sessions.length > 0) {
+                const avgScore = sessions.reduce((sum, s) => sum + (s.percentage || 0), 0) / sessions.length;
+                document.getElementById('avgScore').textContent = Math.round(avgScore) + '%';
+                
+                const totalQ = sessions.reduce((sum, s) => sum + (s.total || 0), 0);
+                document.getElementById('totalQuestions').textContent = totalQ;
+            }
+            
+            document.getElementById('totalMistakes').textContent = (stats.mistakes || []).length;
+
+            // Section stats
+            const sectionScores = stats.section_scores || {};
+            const sectionDiv = document.getElementById('sectionStats');
+            
+            if (Object.keys(sectionScores).length === 0) {
+                sectionDiv.innerHTML = '<p class="empty-state">No section data yet. Complete some quizzes!</p>';
+            } else {
+                let html = '<div class="section-bars">';
+                for (const [section, data] of Object.entries(sectionScores)) {
+                    const avg = data.total_questions > 0 
+                        ? Math.round((data.total_score / data.total_questions) * 100) 
+                        : 0;
+                    const barColor = avg >= 70 ? '#4ade80' : avg >= 50 ? '#fbbf24' : '#ef4444';
+                    html += `
+                        <div class="section-bar-item">
+                            <div class="section-bar-label">
+                                <span>${section}</span>
+                                <span>${avg}% (${data.attempts} attempts)</span>
+                            </div>
+                            <div class="section-bar-track">
+                                <div class="section-bar-fill" style="width: ${avg}%; background: ${barColor}"></div>
+                            </div>
+                        </div>
+                    `;
+                }
+                html += '</div>';
+                sectionDiv.innerHTML = html;
+            }
+
+            // Recent sessions
+            const recentDiv = document.getElementById('recentSessions');
+            const recent = sessions.slice(-10).reverse();
+            
+            if (recent.length === 0) {
+                recentDiv.innerHTML = '<p class="empty-state">No sessions yet. Start a quiz!</p>';
+            } else {
+                let html = '<ul class="session-list">';
+                for (const session of recent) {
+                    const date = new Date(session.date).toLocaleDateString();
+                    const scoreClass = session.percentage >= 70 ? 'good' : session.percentage >= 50 ? 'ok' : 'poor';
+                    html += `
+                        <li class="session-item">
+                            <span class="session-section">${session.section}</span>
+                            <span class="session-score ${scoreClass}">${session.score}/${session.total} (${session.percentage}%)</span>
+                            <span class="session-date">${date}</span>
+                        </li>
+                    `;
+                }
+                html += '</ul>';
+                recentDiv.innerHTML = html;
+            }
+        }
+
+        async function clearAllStats() {
+            if (confirm('Are you sure you want to clear all progress data? This cannot be undone.')) {
+                try {
+                    await fetch('/api/stats/clear', { method: 'POST' });
+                    loadStats();
+                } catch (e) {
+                    console.error('Error clearing stats:', e);
+                }
+            }
+        }
+
+        // Load stats on page load
+        loadStats();
+    </script>
+</body>
+</html>

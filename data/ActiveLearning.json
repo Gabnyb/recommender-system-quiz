@@ -1,0 +1,288 @@
+[
+  {
+    "QuestionID": "AL-Q1",
+    "Section": "ActiveLearning",
+    "Question": "What is the main goal of active learning in recommender systems?",
+    "Options": {
+      "A": "Minimize explanation cost",
+      "B": "Choose the most informative item to ask the user to rate next",
+      "C": "Avoid using the rating matrix",
+      "D": "Replace CF entirely"
+    },
+    "Answer": "B",
+    "Explanation": "Active learning selects the next question that maximizes information gain."
+  },
+  {
+    "QuestionID": "AL-Q2",
+    "Section": "ActiveLearning",
+    "Question": "Active learning is most useful for which users?",
+    "Options": {
+      "A": "Users with dense rating histories",
+      "B": "Users with thousands of ratings",
+      "C": "New users with few or no ratings",
+      "D": "Users who never log in"
+    },
+    "Answer": "C",
+    "Explanation": "Active learning helps mitigate the cold-start problem for new users."
+  },
+  {
+    "QuestionID": "AL-Q3",
+    "Section": "ActiveLearning",
+    "Question": "Which is a non-personalized active learning strategy?",
+    "Options": {
+      "A": "Highest predicted",
+      "B": "log(Popularity) × Entropy",
+      "C": "Popularity",
+      "D": "User-specific utility"
+    },
+    "Answer": "C",
+    "Explanation": "Popularity is independent of the specific user and thus non-personalized."
+  },
+  {
+    "QuestionID": "AL-Q4",
+    "Section": "ActiveLearning",
+    "Question": "Entropy is high for an item when:",
+    "Options": {
+      "A": "All users give the same rating",
+      "B": "Users strongly disagree in their ratings",
+      "C": "The item is never rated",
+      "D": "Ratings are non-numeric"
+    },
+    "Answer": "B",
+    "Explanation": "High disagreement implies high entropy."
+  },
+  {
+    "QuestionID": "AL-Q5",
+    "Section": "ActiveLearning",
+    "Question": "Which strategy usually maximizes information gain?",
+    "Options": {
+      "A": "Highest predicted",
+      "B": "Lowest predicted",
+      "C": "Random",
+      "D": "Popularity"
+    },
+    "Answer": "B",
+    "Explanation": "Items predicted to be disliked often reveal the most about user preferences."
+  },
+  {
+    "QuestionID": "AL-Q6",
+    "Section": "ActiveLearning",
+    "Question": "Which strategy tends to maximize user satisfaction?",
+    "Options": {
+      "A": "Highest predicted",
+      "B": "Lowest predicted",
+      "C": "Entropy",
+      "D": "Random"
+    },
+    "Answer": "A",
+    "Explanation": "Asking about items the user is likely to enjoy increases satisfaction."
+  },
+  {
+    "QuestionID": "AL-Q7",
+    "Section": "ActiveLearning",
+    "Question": "Which strategy is best for a completely new user with no history?",
+    "Options": {
+      "A": "Highest predicted",
+      "B": "Popularity",
+      "C": "Personalized utility",
+      "D": "Pearson scoring"
+    },
+    "Answer": "B",
+    "Explanation": "Popularity is applicable without any personalization."
+  },
+  {
+    "QuestionID": "AL-Q8",
+    "Section": "ActiveLearning",
+    "Question": "Which strategy best ensures the user is likely to know the item?",
+    "Options": {
+      "A": "Entropy",
+      "B": "Lowest predicted",
+      "C": "Random",
+      "D": "Popularity"
+    },
+    "Answer": "D",
+    "Explanation": "Popular items are widely known among users."
+  },
+  {
+    "QuestionID": "AL-Q9",
+    "Section": "ActiveLearning",
+    "Question": "Which statement about non-personalized strategies is correct?",
+    "Options": {
+      "A": "They differ for each user",
+      "B": "They are identical for all users",
+      "C": "They require rating predictions",
+      "D": "They depend on user clusters"
+    },
+    "Answer": "B",
+    "Explanation": "Non-personalized strategies use the same ranking for everyone."
+  },
+  {
+    "QuestionID": "AL-Q10",
+    "Section": "ActiveLearning",
+    "Question": "Given items with product scores 0.20, 0.36, 0.36, and 0.20, which item is best under log(Popularity) × Entropy?",
+    "Options": {
+      "A": "Item 1",
+      "B": "Item 2",
+      "C": "Item 3",
+      "D": "Item 4"
+    },
+    "Answer": "B",
+    "Explanation": "Items 2 and 3 tie; typically the first highest is chosen."
+  },
+  {
+    "QuestionID": "AL-Q11",
+    "Section": "ActiveLearning",
+    "Question": "Which of the following is a personalized strategy?",
+    "Options": {
+      "A": "Highest predicted",
+      "B": "Entropy",
+      "C": "Popularity",
+      "D": "Random"
+    },
+    "Answer": "A",
+    "Explanation": "Highest predicted depends on the user’s model."
+  },
+  {
+    "QuestionID": "AL-Q12",
+    "Section": "ActiveLearning",
+    "Question": "Non-personalized strategies typically do what?",
+    "Options": {
+      "A": "Provide different items per user",
+      "B": "Provide the same candidate list to all users",
+      "C": "Require rating predictions",
+      "D": "Depend on CF similarities"
+    },
+    "Answer": "B",
+    "Explanation": "They ask all users to rate the same items."
+  },
+  {
+    "QuestionID": "AL-Q13",
+    "Section": "ActiveLearning",
+    "Question": "Which statement about entropy-based selection is true?",
+    "Options": {
+      "A": "Entropy guarantees items are liked",
+      "B": "Entropy identifies items with high disagreement",
+      "C": "Entropy requires user-specific utility",
+      "D": "Entropy is zero for all popular items"
+    },
+    "Answer": "B",
+    "Explanation": "Entropy measures distribution spread and uncertainty."
+  },
+  {
+    "QuestionID": "AL-Q14",
+    "Section": "ActiveLearning",
+    "Question": "For a partially known user model, which strategy quickly improves personalization and satisfaction?",
+    "Options": {
+      "A": "Popularity",
+      "B": "Random",
+      "C": "Highest predicted",
+      "D": "Entropy"
+    },
+    "Answer": "C",
+    "Explanation": "Highest predicted refines the model around likely-interesting items."
+  },
+  {
+    "QuestionID": "AL-Q15",
+    "Section": "ActiveLearning",
+    "Question": "Which strategy asks users to rate items the system expects them to dislike?",
+    "Options": {
+      "A": "Entropy",
+      "B": "Popularity",
+      "C": "Highest predicted",
+      "D": "Lowest predicted"
+    },
+    "Answer": "D",
+    "Explanation": "Lowest predicted focuses on learning about potential dislikes."
+  },
+  {
+    "QuestionID": "AL-Q16",
+    "Section": "ActiveLearning",
+    "Question": "Which strategy balances popularity and uncertainty in one score?",
+    "Options": {
+      "A": "Highest predicted",
+      "B": "Random",
+      "C": "log(Popularity) × Entropy",
+      "D": "Lowest predicted"
+    },
+    "Answer": "C",
+    "Explanation": "The combined heuristic uses both popularity and entropy."
+  },
+  {
+    "QuestionID": "AL-Q17",
+    "Section": "ActiveLearning",
+    "Question": "Which statement best describes active learning?",
+    "Options": {
+      "A": "It uses randomness to ensure fairness",
+      "B": "It selects items that maximize information gain or utility",
+      "C": "It eliminates the need for CF",
+      "D": "It replaces offline evaluation"
+    },
+    "Answer": "B",
+    "Explanation": "AL chooses the most informative questions to ask."
+  },
+  {
+    "QuestionID": "AL-Q18",
+    "Section": "ActiveLearning",
+    "Question": "Sparsity refers to what in recommender data?",
+    "Options": {
+      "A": "Missing metadata",
+      "B": "Too many user clusters",
+      "C": "Very few ratings relative to all possible ratings",
+      "D": "Too many ratings per user"
+    },
+    "Answer": "C",
+    "Explanation": "The rating matrix is mostly empty in sparse data."
+  },
+  {
+    "QuestionID": "AL-Q19",
+    "Section": "ActiveLearning",
+    "Question": "How does active learning help reduce sparsity?",
+    "Options": {
+      "A": "By increasing diversity",
+      "B": "By forcing users to rate popular items only",
+      "C": "By selectively asking for ratings on informative items",
+      "D": "By deleting low quality data"
+    },
+    "Answer": "C",
+    "Explanation": "Targeted rating elicitation fills key gaps in the matrix."
+  },
+  {
+    "QuestionID": "AL-Q20",
+    "Section": "ActiveLearning",
+    "Question": "Which of the following is NOT an active learning strategy?",
+    "Options": {
+      "A": "Popularity",
+      "B": "Entropy",
+      "C": "Highest or Lowest predicted",
+      "D": "Pearson correlation"
+    },
+    "Answer": "D",
+    "Explanation": "Pearson correlation is a similarity metric, not a selection strategy."
+  },
+  {
+    "QuestionID": "AL-PDF-Q10",
+    "Section": "ActiveLearning",
+    "Question": "Which of the following is NOT an active learning strategy in recommender systems?",
+    "Options": {
+      "A": "Variance-based sampling",
+      "B": "Highest predicted",
+      "C": "Random sampling",
+      "D": "Temporal decay"
+    },
+    "Answer": "D",
+    "Explanation": "Temporal decay is not an active learning strategy; it's used for weighting ratings over time."
+  },
+  {
+    "QuestionID": "AL-PDF-Q12",
+    "Section": "ActiveLearning",
+    "Question": "In <b>variance-based active learning</b>, we select items with uncertain predictions. Consider two items with predictions from 5 neighbors:<br><br><table><tr><th>Item</th><th>Neighbor Predictions</th><th>Mean</th><th>Variance</th></tr><tr><td><b>X</b></td><td>3.2, 3.8, 2.9, 3.5, 3.1</td><td>3.3</td><td>≈ 0.11</td></tr><tr><td><b>Y</b></td><td>4.8, 4.9, 4.7, 4.8, 4.9</td><td>4.82</td><td>≈ 0.005</td></tr></table><br>Which item should be selected for the user to rate?",
+    "Options": {
+      "A": "Item X — higher variance means more uncertainty",
+      "B": "Item Y — higher average predicted rating",
+      "C": "Item X — lower prediction variance",
+      "D": "Item Y — lower variance is better"
+    },
+    "Answer": "A",
+    "Explanation": "<b>Item X</b> should be selected because it has <b>higher prediction variance</b> (0.11 vs 0.005).<br><br>Higher variance indicates disagreement among neighbors, meaning the rating is uncertain. Getting the actual rating for uncertain items provides more information to improve the model."
+  }
+]

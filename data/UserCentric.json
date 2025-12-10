@@ -1,0 +1,132 @@
+[
+  {
+    "QuestionID": "UC-Q1",
+    "Section": "UserCentric",
+    "Question": "Which decision-making method involves comparing items by their specific attributes?",
+    "Options": {
+      "A": "Social model",
+      "B": "Policy-based",
+      "C": "Attribute-based",
+      "D": "Random selection"
+    },
+    "Answer": "C",
+    "Explanation": "Attribute-based decision making involves comparing items by checking their specific attributes like features, cost, usability."
+  },
+  {
+    "QuestionID": "UC-Q2",
+    "Section": "UserCentric",
+    "Question": "In the user-centric evaluation framework, what does SSA stand for?",
+    "Options": {
+      "A": "Subjective System Aspects",
+      "B": "Systematic Study App",
+      "C": "Subjective Structural Assessment",
+      "D": "System Satisfaction Analysis"
+    },
+    "Answer": "A",
+    "Explanation": "SSA stands for Subjective System Aspects in the user-centric evaluation framework."
+  },
+  {
+    "QuestionID": "UC-Q3",
+    "Section": "UserCentric",
+    "Question": "User-centric evaluation focuses on what aspect of recommender systems?",
+    "Options": {
+      "A": "Algorithm accuracy only",
+      "B": "User experience and satisfaction",
+      "C": "Database performance",
+      "D": "Item popularity"
+    },
+    "Answer": "B",
+    "Explanation": "User-centric evaluation focuses on how users perceive and interact with the recommender system."
+  },
+  {
+    "QuestionID": "UC-Q4",
+    "Section": "UserCentric",
+    "Question": "Which is NOT typically measured in user-centric evaluation?",
+    "Options": {
+      "A": "User satisfaction",
+      "B": "RMSE",
+      "C": "Trust in recommendations",
+      "D": "Perceived usefulness"
+    },
+    "Answer": "B",
+    "Explanation": "RMSE is an algorithm-centric metric. User-centric evaluation measures subjective aspects like satisfaction and trust."
+  },
+  {
+    "QuestionID": "UC-Q5",
+    "Section": "UserCentric",
+    "Question": "User studies in recommender systems typically involve:",
+    "Options": {
+      "A": "Running algorithms on historical data",
+      "B": "Real users interacting with the system",
+      "C": "Calculating precision and recall",
+      "D": "Measuring database query time"
+    },
+    "Answer": "B",
+    "Explanation": "User studies involve real participants interacting with the system to measure subjective experiences."
+  },
+  {
+    "QuestionID": "UC-Q6",
+    "Section": "UserCentric",
+    "Question": "What does perceived accuracy measure?",
+    "Options": {
+      "A": "Actual RMSE of predictions",
+      "B": "How accurate users believe recommendations are",
+      "C": "Database query accuracy",
+      "D": "Feature extraction precision"
+    },
+    "Answer": "B",
+    "Explanation": "Perceived accuracy is a subjective measure of how accurate users believe the recommendations are."
+  },
+  {
+    "QuestionID": "UC-Q7",
+    "Section": "UserCentric",
+    "Question": "Decision fatigue in recommender systems refers to:",
+    "Options": {
+      "A": "Algorithm slowdown",
+      "B": "Users becoming overwhelmed by too many choices",
+      "C": "Database crashes",
+      "D": "Cold start problems"
+    },
+    "Answer": "B",
+    "Explanation": "Decision fatigue occurs when users are overwhelmed by too many options, making choice difficult."
+  },
+  {
+    "QuestionID": "UC-Q8",
+    "Section": "UserCentric",
+    "Question": "Which framework component deals with user's attitude toward the system?",
+    "Options": {
+      "A": "Objective System Aspects",
+      "B": "Subjective System Aspects",
+      "C": "User Behavior",
+      "D": "Algorithm metrics"
+    },
+    "Answer": "B",
+    "Explanation": "Subjective System Aspects (SSA) capture user attitudes, perceptions, and feelings about the system."
+  },
+  {
+    "QuestionID": "UC-Q9",
+    "Section": "UserCentric",
+    "Question": "Serendipity in recommendations refers to:",
+    "Options": {
+      "A": "Recommending popular items",
+      "B": "Surprising but relevant discoveries",
+      "C": "Accurate rating predictions",
+      "D": "Fast response time"
+    },
+    "Answer": "B",
+    "Explanation": "Serendipity measures how well a system helps users discover unexpected but relevant items."
+  },
+  {
+    "QuestionID": "UC-Q10",
+    "Section": "UserCentric",
+    "Question": "What is the purpose of measuring user trust in recommender systems?",
+    "Options": {
+      "A": "To improve RMSE",
+      "B": "To understand if users will follow recommendations",
+      "C": "To calculate precision",
+      "D": "To measure item popularity"
+    },
+    "Answer": "B",
+    "Explanation": "User trust indicates whether users believe in and are likely to act on the system's recommendations."
+  }
+]

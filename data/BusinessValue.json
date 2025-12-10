@@ -1,0 +1,132 @@
+[
+  {
+    "QuestionID": "BV-Q1",
+    "Section": "BusinessValue",
+    "Question": "Which is a primary business objective of recommender systems?",
+    "Options": {
+      "A": "Minimize RMSE",
+      "B": "Improve click-through rate (CTR)",
+      "C": "Reduce semantic drift",
+      "D": "Increase TF-IDF coverage"
+    },
+    "Answer": "B",
+    "Explanation": "Recommender systems aim to increase user engagement and clicks, which supports business goals."
+  },
+  {
+    "QuestionID": "BV-Q2",
+    "Section": "BusinessValue",
+    "Question": "Which of the following is NOT a business KPI?",
+    "Options": {
+      "A": "Conversion rate",
+      "B": "Revenue per session",
+      "C": "RMSE",
+      "D": "Customer retention"
+    },
+    "Answer": "C",
+    "Explanation": "RMSE is an offline accuracy metric, not a business KPI."
+  },
+  {
+    "QuestionID": "BV-Q3",
+    "Section": "BusinessValue",
+    "Question": "Why do companies typically adopt recommender systems?",
+    "Options": {
+      "A": "They are legally required",
+      "B": "They reduce user choice",
+      "C": "They increase engagement and sales",
+      "D": "They eliminate the need for UI design"
+    },
+    "Answer": "C",
+    "Explanation": "Recommender systems drive user engagement and purchases."    
+  },
+  {
+    "QuestionID": "BV-Q4",
+    "Section": "BusinessValue",
+    "Question": "Which example is a business metric often improved by recommender systems?",
+    "Options": {
+      "A": "Cosine similarity",
+      "B": "Average order value",
+      "C": "Pearson correlation",
+      "D": "Item entropy"
+    },
+    "Answer": "B",
+    "Explanation": "Average order value can increase due to relevant recommendations."
+  },
+  {
+    "QuestionID": "BV-Q5",
+    "Section": "BusinessValue",
+    "Question": "Improving RMSE does NOT necessarily improve which of the following?",
+    "Options": {
+      "A": "Ranking quality",
+      "B": "User trust",
+      "C": "Business KPIs like CTR",
+      "D": "CF performance"
+    },
+    "Answer": "C",
+    "Explanation": "Better RMSE does not guarantee better business impact, such as CTR."    
+  },
+  {
+    "QuestionID": "BV-Q6",
+    "Section": "BusinessValue",
+    "Question": "Which factor strongly affects recommender performance beyond the algorithm itself?",
+    "Options": {
+      "A": "Rate of IDF decay",
+      "B": "Presentation and UI design",
+      "C": "Length of item descriptions",
+      "D": "Choice of cosine similarity"
+    },
+    "Answer": "B",
+    "Explanation": "Placement, UI, and presentation influence effectiveness significantly."
+  },
+  {
+    "QuestionID": "BV-Q7",
+    "Section": "BusinessValue",
+    "Question": "Which is a value beyond accuracy that recommender systems can produce?",
+    "Options": {
+      "A": "Serendipity",
+      "B": "Lower TF-IDF weights",
+      "C": "Reduced IDF variance",
+      "D": "Higher Pearson score"
+    },
+    "Answer": "A",
+    "Explanation": "Serendipity improves user experience beyond accuracy-focused metrics."
+  },
+  {
+    "QuestionID": "BV-Q8",
+    "Section": "BusinessValue",
+    "Question": "Reducing information overload by recommending suitable items mainly leads to what?",
+    "Options": {
+      "A": "Lower satisfaction",
+      "B": "Less engagement",
+      "C": "Higher usability and easier discovery",
+      "D": "Poorer conversion"
+    },
+    "Answer": "C",
+    "Explanation": "Recommenders help users find relevant items efficiently, improving usability."
+  },
+  {
+    "QuestionID": "BV-Q9",
+    "Section": "BusinessValue",
+    "Question": "In platforms like Netflix or YouTube, recommendations often drive approximately what share of engagement?",
+    "Options": {
+      "A": "1–5%",
+      "B": "20–30%",
+      "C": "80% or more",
+      "D": "0%"
+    },
+    "Answer": "C",
+    "Explanation": "Studies show a large majority of consumption comes directly from recommendations."
+  },
+  {
+    "QuestionID": "BV-Q10",
+    "Section": "BusinessValue",
+    "Question": "Why is the true causal business value of recommender systems hard to measure?",
+    "Options": {
+      "A": "Counterfactual behavior without RS is unobservable",
+      "B": "RMSE is always perfect",
+      "C": "A/B tests cannot be run",
+      "D": "RS never influence business"
+    },
+    "Answer": "A",
+    "Explanation": "We cannot directly observe what users would have done without recommendations."
+  }
+]

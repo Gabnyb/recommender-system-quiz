@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Quiz - Section Selection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script>
+        // Initialize dark mode from localStorage before page loads
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <h1>📚 Exam Preparation Quiz</h1>
+                <div class="header-actions">
+                    <a href="/stats" class="btn btn-stats">📊 Progress</a>
+                    <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+                </div>
+            </div>
+            <p class="subtitle">Select a section or take a randomized quiz</p>
+        </header>
+
+        <main>
+            <!-- Review Mistakes -->
+            <div class="quiz-mode-section review-section">
+                <a href="/quiz/mistakes" class="review-mistakes-btn">
+                    <span class="review-icon">📝</span>
+                    <span class="review-text">
+                        <strong>Review Mistakes</strong>
+                        <small>Practice questions you got wrong</small>
+                    </span>
+                </a>
+            </div>
+
+            <!-- Random Quiz Section -->
+            <div class="quiz-mode-section">
+                <h2 class="section-title">🎲 Random Quiz</h2>
+                <p class="section-description">Test yourself with questions from all sections</p>
+                <div class="random-quiz-options">
+                    {% for length_id, length_info in quiz_lengths.items() %}
+                    <a href="/quiz/random/{{ length_id }}" class="random-card">
+                        <div class="random-icon">{{ length_info.icon }}</div>
+                        <div class="random-info">
+                            <h3>{{ length_info.name }}</h3>
+                            <p>{{ length_info.count }} questions</p>
+                        </div>
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <!-- Section Selection -->
+            <div class="quiz-mode-section">
+                <h2 class="section-title">📖 Practice by Section</h2>
+                <p class="section-description">Focus on a specific topic</p>
+                <div class="section-grid">
+                    {% for section_id, section_info in sections.items() %}
+                    <a href="/quiz/{{ section_id }}" class="section-card">
+                        <div class="section-number">{{ loop.index }}</div>
+                        <div class="section-info">
+                            <h2>{{ section_info.name }}</h2>
+                            <p>{{ section_info.question_count }} questions</p>
+                        </div>
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+
+            {% if sections %}
+            <div class="all-sections">
+                <a href="{{ url_for('quiz_all') }}" class="btn btn-primary btn-large">
+                    📝 Practice All Sections ({{ total_questions }} questions)
+                </a>
+            </div>
+            {% else %}
+            <div class="empty-state">
+                <p>No quiz sections found. Add JSON files to the <code>data/</code> folder.</p>
+                <p>Expected format: <code>section1.json</code>, <code>section2.json</code>, etc.</p>
+            </div>
+            {% endif %}
+        </main>
+
+        <footer>
+            <p>Good luck with your exam! 🍀</p>
+        </footer>
+    </div>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            document.documentElement.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        }
+        // Apply dark mode on load
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+    </script>
+</body>
+</html>
