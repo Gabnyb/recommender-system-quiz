@@ -100,7 +100,7 @@ function showQuestion() {
 
     // Shuffle options and assign new display letters
     const shuffledOptions = shuffleArray([...options]);
-    const displayLetters = ['A', 'B', 'C', 'D'];
+    const displayLetters = ['A', 'B', 'C', 'D', 'E'];
     optionMapping = {}; // Reset mapping
     
     shuffledOptions.forEach((opt, index) => {
