@@ -148,7 +148,7 @@
   {
     "QuestionID": "EX-Q12",
     "Section": "Example Questions (Exam Practice)",
-    "Question": "Suppose this information is provided for a set of movie items:<br><br><img src='/static/images/exam_img7.png' alt='Active Learning Strategies Table' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>If each of the following Active Learning strategies selects one item to present to a user for rating, identify the item that is selected by each strategy:<br>(a) Popularity strategy<br>(b) Entropy strategy<br>(c) Log₁₀(Popularity)*Entropy strategy",
+    "Question": "Suppose this information is provided for a set of movie items:<br><br><img src='/static/images/exam_img8.png' alt='Active Learning Strategies Table' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>If each of the following Active Learning strategies selects one item to present to a user for rating, identify the item that is selected by each strategy:<br>(a) Popularity strategy<br>(b) Entropy strategy<br>(c) Log₁₀(Popularity)*Entropy strategy",
     "Options": {
       "A": "(a) Item 1, (b) Item 4, (c) Item 2",
       "B": "(a) Item 4, (b) Item 1, (c) Item 3",
