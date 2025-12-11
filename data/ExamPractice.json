@@ -54,7 +54,7 @@
   {
     "QuestionID": "EX-Q5",
     "Section": "Example Questions (Exam Practice)",
-    "Question": "Consider the provided figure, which displays three dictionary choices for a customer.<br><br><img src='/static/images/exam_img4.png' alt='Dictionary Comparison' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>Which of the following methods does the customer use in making a choice?",
+    "Question": "Consider the provided figure, which displays three dictionary choices for a customer.<br><br><img src='/static/images/exam_img5.png' alt='Dictionary Comparison' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>Which of the following methods does the customer use in making a choice?",
     "Options": {
       "A": "Social model",
       "B": "Policy-based",
