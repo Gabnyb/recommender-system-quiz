@@ -188,7 +188,7 @@
   {
     "QuestionID": "EX-Q15",
     "Section": "Example Questions (Exam Practice)",
-    "Question": "Below is the formula for RMSE (Root Mean Squared Error):<br><br><img src='/static/images/exam_img9.png' alt='RMSE Formula' style='max-width:100%; margin: 10px 0;'><br><br>Given the dataset below, calculate the RMSE value:<br><br><img src='/static/images/exam_img10.png' alt='RMSE Dataset' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'>",
+    "Question": "Below is the formula for RMSE (Root Mean Squared Error):<br><br><img src='/static/images/exam_img10.png' alt='RMSE Formula' style='max-width:100%; margin: 10px 0;'><br><br>Given the dataset below, calculate the RMSE value:<br><br><img src='/static/images/exam_img9.png' alt='RMSE Dataset' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'>",
     "Options": {
       "A": "0.95",
       "B": "1.04",
