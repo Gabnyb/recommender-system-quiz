@@ -54,7 +54,7 @@
   {
     "QuestionID": "EX-Q5",
     "Section": "Example Questions (Exam Practice)",
-    "Question": "Consider the provided figure, which displays three dictionary choices for a customer.<br><br><img src='/static/images/exam_img5.png' alt='Dictionary Comparison' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>Which of the following methods does the customer use in making a choice?",
+    "Question": "Consider the provided figure, which displays three dictionary choices for a customer.<br><br><img src='/static/images/exam_img3.png' alt='Dictionary Comparison' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>Which of the following methods does the customer use in making a choice?",
     "Options": {
       "A": "Social model",
       "B": "Policy-based",
@@ -94,7 +94,7 @@
   {
     "QuestionID": "EX-Q8",
     "Section": "Example Questions (Exam Practice)",
-    "Question": "Consider a dataset with ratings provided by users for some items. User 1, User 2, and User 3 are members of a group. A group recommender system is requested to generate a recommendation list with the Top 5 items for this group.<br><br><img src='/static/images/exam_img6.png' alt='Group Ratings Dataset' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>Based on the 'Average' strategy in group recommender systems, which items will be recommended to this group?",
+    "Question": "Consider the following dataset with ratings provided by users for some items:<br><br><img src='/static/images/exam_img4.png' alt='Group Ratings Dataset' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>Suppose User 1, User 2, and User 3 are members of a group. A group recommender system is requested to generate a recommendation list with the Top 5 items for this group. Based on the 'Average' strategy in group recommender systems, which items will be recommended to this group?",
     "Options": {
       "A": "E, F, J, H, D",
       "B": "F, E, J, H, D",
@@ -148,7 +148,7 @@
   {
     "QuestionID": "EX-Q12",
     "Section": "Example Questions (Exam Practice)",
-    "Question": "Suppose this information is provided for a set of movie items:<br><br><img src='/static/images/exam_img8.png' alt='Active Learning Strategies Table' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>If each of the following Active Learning strategies selects one item to present to a user for rating, identify the item that is selected by each strategy:<br>(a) Popularity strategy<br>(b) Entropy strategy<br>(c) Log₁₀(Popularity)*Entropy strategy",
+    "Question": "Suppose this information is provided for a set of movie items:<br><br><img src='/static/images/exam_img5.png' alt='Active Learning Strategies Table' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>If each of the following Active Learning strategies selects one item to present to a user for rating, identify the item that is selected by each strategy:<br><br>• (a) Popularity strategy<br>• (b) Entropy strategy<br>• (c) Log<sub>10</sub>(Popularity)*Entropy strategy",
     "Options": {
       "A": "(a) Item 1, (b) Item 4, (c) Item 2",
       "B": "(a) Item 4, (b) Item 1, (c) Item 3",
@@ -156,7 +156,7 @@
       "D": "(a) Item 1, (b) Item 2, (c) Item 4"
     },
     "Answer": "A",
-    "Explanation": "According to the information:<br>• (a) Popularity strategy: selects Item 1 (highest popularity score = 1000)<br>• (b) Entropy strategy: selects Item 4 (highest entropy score = 0.9)<br>• (c) Log₁₀(Popularity)*Entropy: selects Item 2 (highest combined score = 2.16)"
+    "Explanation": "<img src='/static/images/exam_img6.png' alt='Active Learning Calculation' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>According to the information:<br>• (a) Popularity strategy: selects Item 1 (highest popularity score = 1000)<br>• (b) Entropy strategy: selects Item 4 (highest entropy score = 0.9)<br>• (c) Log₁₀(Popularity)*Entropy: selects Item 2 (highest combined score = 2.16)"
   },
   {
     "QuestionID": "EX-Q13",
@@ -188,7 +188,7 @@
   {
     "QuestionID": "EX-Q15",
     "Section": "Example Questions (Exam Practice)",
-    "Question": "Below is the formula for RMSE (Root Mean Squared Error):<br><br><img src='/static/images/exam_img10.png' alt='RMSE Formula' style='max-width:100%; margin: 10px 0;'><br><br>Given the dataset below, calculate the RMSE value:<br><br><img src='/static/images/exam_img9.png' alt='RMSE Dataset' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'>",
+    "Question": "Below is the formula for RMSE (Root Mean Squared Error):<br><br><img src='/static/images/exam_img7.png' alt='RMSE Formula' style='max-width:100%; margin: 10px 0;'><br><br>Given the dataset below, calculate the RMSE value:<br><br><img src='/static/images/exam_img8.png' alt='RMSE Dataset' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'>",
     "Options": {
       "A": "0.95",
       "B": "1.04",
@@ -196,7 +196,7 @@
       "D": "1.25"
     },
     "Answer": "B",
-    "Explanation": "sum = (5-4.5)² + (4-5)² + (5-5)² + (3-5)² + (5-4.5)²<br>sum = 0.25 + 1 + 0 + 4 + 0.25 = 5.5<br>RMSE = √(5.5/5) = √1.1 = 1.04"
+    "Explanation": "<img src='/static/images/exam_img9.png' alt='RMSE Calculation' style='max-width:100%; margin: 10px 0;'><br><br>sum = (5-4.5)² + (4-5)² + (5-5)² + (3-5)² + (5-4.5)²<br>sum = 0.25 + 1 + 0 + 4 + 0.25 = 5.5<br>RMSE = √(5.5/5) = √1.1 = 1.04"
   },
   {
     "QuestionID": "EX-Q16",
@@ -227,7 +227,7 @@
   {
     "QuestionID": "EX-Q18",
     "Section": "Example Questions (Exam Practice)",
-    "Question": "Consider the formula for calculating the sparsity of a dataset:<br><br>$$Sparsity = 1 - \\frac{|R|}{|I| \\times |U|}$$<br><br>If a dataset comprises 100,000 ratings provided by 943 users to 1,682 items, what is the sparsity of this dataset?",
+    "Question": "Consider the formula for calculating the sparsity of a dataset:<br><br><img src='/static/images/exam_img10.png' alt='Sparsity Formula' style='max-width:100%; margin: 10px 0;'><br><br>If a dataset comprises 100,000 ratings provided by 943 users to 1,682 items, what is the sparsity of this dataset?",
     "Options": {
       "A": "0.063",
       "B": "0.874",
@@ -265,7 +265,7 @@
   {
     "QuestionID": "EX-Q21",
     "Section": "Example Questions (Exam Practice)",
-    "Question": "Consider two recommender systems rec₁ and rec₂ with scores for 3 items:<br><br><img src='/static/images/exam_img14.png' alt='Hybrid Recommender Scores' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>A weighted hybrid recommender system will combine scores using: score = β₁ × rec₁ + β₂ × rec₂<br><br>Assuming β₁ = 0.5 and β₂ = 0.5, what are the hybrid scores?",
+    "Question": "Consider the tables below, which display the scores predicted by two recommender systems, called rec<sub>1</sub> and rec<sub>2</sub>. Each system has computed predictions for the preferences of a user and scored the items to generate recommendations for her:<br><br><img src='/static/images/exam_img11.png' alt='Recommender Scores' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>A weighted hybrid recommender system called rec<sub>weighted</sub> will produce a new ranking by combining the scores from rec<sub>1</sub> and rec<sub>2</sub>. Assuming that the weights β<sub>1</sub> = 0.5 and β<sub>2</sub> = 0.5, which of the following options correctly represents the predicted scores by hybrid rec<sub>weighted</sub>?<br><br><img src='/static/images/exam_img12.png' alt='Answer Options' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>Note: The following formula:<br><br><img src='/static/images/exam_img13.png' alt='Hybrid Formula' style='max-width:100%; margin: 10px 0;'>",
     "Options": {
       "A": "Item 1: 0.55, Item 2: 0.45, Item 3: 0.35",
       "B": "Item 1: 0.65, Item 2: 0.45, Item 3: 0.35",
@@ -303,7 +303,7 @@
   {
     "QuestionID": "EX-Q24",
     "Section": "Example Questions (Exam Practice)",
-    "Question": "A movie recommender system generates a list of recommendations predicted to be relevant for the user:<br><br><img src='/static/images/exam_img16.png' alt='Movie Recommendations' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>Calculate the Precision, Recall, and F1 Score.",
+    "Question": "A movie recommender system is used to recommend relevant movies to a user. The system generates a list of movie recommendations predicted to be relevant for the user. The following are the lists of movies recommended by the system and the movies that are relevant (actually good) for the user:<br><br><img src='/static/images/exam_img14.png' alt='Movie Lists' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>Calculate the Precision, Recall, and F1 Score for this movie recommender system using the provided lists. Note: here are the formulas:<br><br><img src='/static/images/exam_img15.png' alt='Precision, Recall, F1 Formulas' style='max-width:100%; margin: 10px 0;'>",
     "Options": {
       "A": "Precision: 0.5, Recall: 0.6, F1: 0.54",
       "B": "Precision: 0.6, Recall: 0.5, F1: 0.54",
@@ -330,7 +330,7 @@
   {
     "QuestionID": "EX-Q26",
     "Section": "Example Questions (Exam Practice)",
-    "Question": "Consider the following dataset of transactions:<br><br><table><tr><th>TID</th><th>Items</th></tr><tr><td>T1</td><td>Milk, Diaper, Beer</td></tr><tr><td>T2</td><td>Bread, Diaper, Beer, Eggs</td></tr><tr><td>T3</td><td>Milk, Diaper, Beer, Cola</td></tr><tr><td>T4</td><td>Bread, Milk, Diaper, Beer</td></tr><tr><td>T5</td><td>Bread, Milk, Cola</td></tr></table><br><br>Calculate the support and confidence for the following association rule:<br>{Milk, Diaper} ⇒ Beer",
+    "Question": "Consider the following dataset of transactions:<br><br><img src='/static/images/exam_img16.png' alt='Transaction Dataset' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>Calculate the support and confidence for the following association rule:<br>{Milk, Diaper} ⇒ Beer<br><br><img src='/static/images/exam_img17.png' alt='Support and Confidence Formulas' style='max-width:100%; margin: 10px 0;'>",
     "Options": {
       "A": "Support: 0.4, Confidence: 0.66",
       "B": "Support: 0.6, Confidence: 0.75",
@@ -356,7 +356,7 @@
   {
     "QuestionID": "EX-Q28",
     "Section": "Example Questions (Exam Practice)",
-    "Question": "The following figure represents the Confusion Matrix:<br><br><img src='/static/images/exam_img18.png' alt='Confusion Matrix' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>What is the name of evaluation metric represented by the formula: TP / (TP + FN)?",
+    "Question": "The following figure represents the Confusion Matrix:<br><br><img src='/static/images/exam_img18.png' alt='Confusion Matrix' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>Considering that, what is the name of evaluation metric represented by the following formula?<br><br><img src='/static/images/exam_img19.png' alt='Metric Formula' style='max-width:100%; margin: 10px 0;'>",
     "Options": {
       "A": "Precision",
       "B": "Recall",
@@ -408,7 +408,7 @@
   {
     "QuestionID": "EX-Q32",
     "Section": "Example Questions (Exam Practice)",
-    "Question": "Consider the following dataset of ratings:<br><br><table><tr><th>User</th><th>Item 1</th><th>Item 2</th><th>Item 3</th><th>Item 4</th><th>Item 5</th></tr><tr><td>U1</td><td>5</td><td>-</td><td>4</td><td>-</td><td>5</td></tr><tr><td>U2</td><td>4</td><td>3</td><td>-</td><td>-</td><td>4</td></tr><tr><td>U3</td><td>-</td><td>3</td><td>5</td><td>4</td><td>-</td></tr><tr><td>U4</td><td>3</td><td>-</td><td>4</td><td>5</td><td>-</td></tr></table><br><br>Calculate the support and confidence for the following association rule:<br>Item 1 ⇒ Item 5",
+    "Question": "Consider the following dataset of ratings:<br><br><img src='/static/images/exam_img20.png' alt='Rating Dataset' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>Calculate the support and confidence for the following association rule:<br>Item 1 ⇒ Item 5<br><br>Note: here are the formulas:<br><br><img src='/static/images/exam_img21.png' alt='Support and Confidence Formulas' style='max-width:100%; margin: 10px 0;'>",
     "Options": {
       "A": "Support: 0.5, Confidence: 1.0",
       "B": "Support: 0.4, Confidence: 0.8",
@@ -434,7 +434,7 @@
   {
     "QuestionID": "EX-Q34",
     "Section": "Example Questions (Exam Practice)",
-    "Question": "The dataset below represents ratings provided by users for different items.<br><br><img src='/static/images/exam_img22.png' alt='Rating Dataset' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>What is the predicted rating of User 1 for Item 5 indicated with '???' in the dataset based on user similarities?<br><br><img src='/static/images/exam_img23.png' alt='Additional Data' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'>",
+    "Question": "The dataset below represents ratings provided by users for different items.<br><br><img src='/static/images/exam_img22.png' alt='Rating Dataset' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>What is the predicted rating of User 1 for Item 5 indicated with '???' in the dataset based on user similarities? Briefly explain your answer.<br><br>In your calculation, consider using the following table with additional data, including similarities between User 1 and other users, as well as the average rating (r̄) for each user:<br><br><strong>Additional data:</strong><br><br><img src='/static/images/exam_img23.png' alt='Similarity Data' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br><img src='/static/images/exam_img24.png' alt='Additional Data' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>Note: The following is the formula to predict the rating user a for item p, based on the similarity between user a and other users:<br><br><img src='/static/images/exam_img25.png' alt='CF Prediction Formula' style='max-width:100%; margin: 10px 0;'>",
     "Options": {
       "A": "4.0",
       "B": "4.3",
