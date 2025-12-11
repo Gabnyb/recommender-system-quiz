@@ -470,6 +470,8 @@ header h1 {
     color: var(--accent-green);
     margin-bottom: 15px;
     font-family: 'Space Mono', monospace;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 .calc-buttons {
