@@ -3,458 +3,458 @@
     "QuestionID": "EX-Q1",
     "Section": "Example Questions (Exam Practice)",
     "Question": "Briefly explain the recommendation approach known as Content-based Filtering (CBF).",
-    "Options": [
-      "Content-based Filtering (CBF) is a recommendation approach that primarily focuses on using the content features of items, such as genre or keywords, to suggest items with content features similar to those items previously liked by a user.",
-      "Content-based Filtering (CBF) is a recommendation approach that uses ratings from similar users to make recommendations.",
-      "Content-based Filtering (CBF) is a recommendation approach that combines multiple recommendation techniques.",
-      "Content-based Filtering (CBF) is a recommendation approach that uses explicit user requirements to filter items."
-    ],
-    "Answer": "Content-based Filtering (CBF) is a recommendation approach that primarily focuses on using the content features of items, such as genre or keywords, to suggest items with content features similar to those items previously liked by a user.",
+    "Options": {
+      "A": "Content-based Filtering (CBF) is a recommendation approach that primarily focuses on using the content features of items, such as genre or keywords, to suggest items with content features similar to those items previously liked by a user.",
+      "B": "Content-based Filtering (CBF) is a recommendation approach that uses ratings from similar users to make recommendations.",
+      "C": "Content-based Filtering (CBF) is a recommendation approach that combines multiple recommendation techniques.",
+      "D": "Content-based Filtering (CBF) is a recommendation approach that uses explicit user requirements to filter items."
+    },
+    "Answer": "A",
     "Explanation": "Content-based Filtering (CBF) is a popular recommendation approach that primarily focuses on using the content features of items, such as genre or keywords, to suggest items with content features similar to those items previously liked by a user. For instance, in the book recommendation domain, a CBF might analyze the words within books to find content-based similarities and generate recommendations of books for users."
   },
   {
     "QuestionID": "EX-Q2",
     "Section": "Example Questions (Exam Practice)",
     "Question": "What type of recommender systems is displayed in the following figure?<br><br><img src='/static/images/exam_img1.png' alt='Recommender System Diagram' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'>",
-    "Options": [
-      "Content-Based Filtering (CBF)",
-      "Collaborative Filtering (CF)",
-      "Pipelined hybridization",
-      "None of the given options"
-    ],
-    "Answer": "Collaborative Filtering (CF)",
+    "Options": {
+      "A": "Content-Based Filtering (CBF)",
+      "B": "Collaborative Filtering (CF)",
+      "C": "Pipelined hybridization",
+      "D": "None of the given options"
+    },
+    "Answer": "B",
     "Explanation": "Collaborative Filtering (CF) works by finding similar users based on their rating patterns and recommending items that those similar users have liked."
   },
   {
     "QuestionID": "EX-Q3",
     "Section": "Example Questions (Exam Practice)",
     "Question": "Which of the following options represents the result of lemmatization applied to \"am\", \"are\", and \"is\"?",
-    "Options": [
-      "am, are, is → was",
-      "am, are, is → been",
-      "am, are, is → being",
-      "am, are, is → be"
-    ],
-    "Answer": "am, are, is → be",
+    "Options": {
+      "A": "am, are, is → was",
+      "B": "am, are, is → been",
+      "C": "am, are, is → being",
+      "D": "am, are, is → be"
+    },
+    "Answer": "D",
     "Explanation": "Lemmatization aims to obtain real, grammatically correct words by reducing variant forms to their base form. Consequently, \"am\", \"are\", and \"is\" are lemmatized to \"be\"."
   },
   {
     "QuestionID": "EX-Q4",
     "Section": "Example Questions (Exam Practice)",
     "Question": "What is the name of the evaluation metric represented by the following formula?<br><br><img src='/static/images/exam_img2.png' alt='Evaluation Metric Formula' style='max-width:100%; margin: 10px 0;'>",
-    "Options": [
-      "Mean Absolute Error (MAE)",
-      "Root Mean Squared Error (RMSE)",
-      "Precision",
-      "F1-Score"
-    ],
-    "Answer": "Root Mean Squared Error (RMSE)",
+    "Options": {
+      "A": "Mean Absolute Error (MAE)",
+      "B": "Root Mean Squared Error (RMSE)",
+      "C": "Precision",
+      "D": "F1-Score"
+    },
+    "Answer": "B",
     "Explanation": "RMSE (Root Mean Squared Error) is calculated by taking the square root of the average of squared differences between predicted and actual ratings."
   },
   {
     "QuestionID": "EX-Q5",
     "Section": "Example Questions (Exam Practice)",
     "Question": "Consider the provided figure, which displays three dictionary choices for a customer.<br><br><img src='/static/images/exam_img4.png' alt='Dictionary Comparison' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>Which of the following methods does the customer use in making a choice?",
-    "Options": [
-      "Social model",
-      "Policy-based",
-      "Attribute-based",
-      "None of the given options"
-    ],
-    "Answer": "Attribute-based",
+    "Options": {
+      "A": "Social model",
+      "B": "Policy-based",
+      "C": "Attribute-based",
+      "D": "None of the given options"
+    },
+    "Answer": "C",
     "Explanation": "Attribute-based. The figure displays that the customer compares dictionary apps and makes choices by checking their specific \"attributes\": number of words, usability, and cost."
   },
   {
     "QuestionID": "EX-Q6",
     "Section": "Example Questions (Exam Practice)",
     "Question": "What is the challenge addressed by \"regularization\" when training a recommender model?",
-    "Options": [
-      "Addressing the cold start challenge",
-      "Addressing the overfitting challenge",
-      "Addressing the sparsity challenge",
-      "Addressing the scalability challenge"
-    ],
-    "Answer": "Addressing the overfitting challenge",
+    "Options": {
+      "A": "Addressing the cold start challenge",
+      "B": "Addressing the overfitting challenge",
+      "C": "Addressing the sparsity challenge",
+      "D": "Addressing the scalability challenge"
+    },
+    "Answer": "B",
     "Explanation": "Regularization addresses the overfitting challenge. Overfitting occurs when a model learns the training data too well, including noise, and fails to generalize to new data."
   },
   {
     "QuestionID": "EX-Q7",
     "Section": "Example Questions (Exam Practice)",
     "Question": "What is the primary objective of 'rating prediction' algorithms in recommender systems?",
-    "Options": [
-      "To group items based on their profile image",
-      "To create visual descriptions for items",
-      "To find the number of items in the dataset",
-      "To count the total number of ratings in the dataset",
-      "None of the given options"
-    ],
-    "Answer": "None of the given options",
+    "Options": {
+      "A": "To group items based on their profile image",
+      "B": "To create visual descriptions for items",
+      "C": "To find the number of items in the dataset",
+      "D": "To count the total number of ratings in the dataset",
+      "E": "None of the given options"
+    },
+    "Answer": "E",
     "Explanation": "None of the given options. The primary objective of 'rating prediction' algorithms is to achieve accurate predictions of user ratings. This is typically accomplished by minimizing the prediction error, i.e., the difference between the known (true) ratings and predicted ratings."
   },
   {
     "QuestionID": "EX-Q8",
     "Section": "Example Questions (Exam Practice)",
     "Question": "Consider a dataset with ratings provided by users for some items. User 1, User 2, and User 3 are members of a group. A group recommender system is requested to generate a recommendation list with the Top 5 items for this group.<br><br><img src='/static/images/exam_img5.png' alt='Group Ratings Dataset' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>Based on the 'Average' strategy in group recommender systems, which items will be recommended to this group?",
-    "Options": [
-      "E, F, J, H, D",
-      "F, E, J, H, D",
-      "F, J, E, H, D",
-      "D, H, J, E, F"
-    ],
-    "Answer": "F, E, J, H, D",
+    "Options": {
+      "A": "E, F, J, H, D",
+      "B": "F, E, J, H, D",
+      "C": "F, J, E, H, D",
+      "D": "D, H, J, E, F"
+    },
+    "Answer": "B",
     "Explanation": "Top 5 items recommended to the group: F, E, J, H, D. This is determined by calculating the average rating (mean rating) for each item across the three group members:<br>• Item F: (9+9+9)/3 = 9.0<br>• Item E: (10+7+9)/3 = 8.6<br>• Item J: (8+8+8)/3 = 8.0<br>• Item H: (8+9+6)/3 = 7.6<br>• Item D: (6+9+7)/3 = 7.3"
   },
   {
     "QuestionID": "EX-Q9",
     "Section": "Example Questions (Exam Practice)",
     "Question": "If the primary task of a recommender system is to predict the 'exact' ratings of users, which metrics are most suitable for evaluation?",
-    "Options": [
-      "Precision and Recall",
-      "MAE and RMSE",
-      "F1-Score",
-      "MAP",
-      "None of the given options"
-    ],
-    "Answer": "MAE and RMSE",
+    "Options": {
+      "A": "Precision and Recall",
+      "B": "MAE and RMSE",
+      "C": "F1-Score",
+      "D": "MAP",
+      "E": "None of the given options"
+    },
+    "Answer": "B",
     "Explanation": "MAE (Mean Absolute Error) and RMSE (Root Mean Squared Error) are most suitable for evaluating rating prediction accuracy as they measure the difference between predicted and actual ratings."
   },
   {
     "QuestionID": "EX-Q10",
     "Section": "Example Questions (Exam Practice)",
     "Question": "Which of the following options is NOT an example of an Active Learning strategy for selecting items to show to users and asking them to provide ratings?",
-    "Options": [
-      "Lemmatization",
-      "Random",
-      "Highest-predicted",
-      "Popularity-based",
-      "Entropy-based"
-    ],
-    "Answer": "Lemmatization",
+    "Options": {
+      "A": "Lemmatization",
+      "B": "Random",
+      "C": "Highest-predicted",
+      "D": "Popularity-based",
+      "E": "Entropy-based"
+    },
+    "Answer": "A",
     "Explanation": "Lemmatization is a text processing technique, not an Active Learning strategy. Random, Highest-predicted, Popularity-based, and Entropy-based are all valid Active Learning strategies for selecting items to present to users."
   },
   {
     "QuestionID": "EX-Q11",
     "Section": "Example Questions (Exam Practice)",
     "Question": "What is a potential disadvantage of A/B testing when evaluating recommender systems?",
-    "Options": [
-      "It is too expensive to implement",
-      "It takes too long to set up",
-      "There is a risk of losing customers if the recommendation quality is not good",
-      "It cannot measure user satisfaction"
-    ],
-    "Answer": "There is a risk of losing customers if the recommendation quality is not good",
+    "Options": {
+      "A": "It is too expensive to implement",
+      "B": "It takes too long to set up",
+      "C": "There is a risk of losing customers if the recommendation quality is not good",
+      "D": "It cannot measure user satisfaction"
+    },
+    "Answer": "C",
     "Explanation": "There is a risk of losing customers if the recommendation quality is not good. If one of the models in A/B testing provides poor recommendations, users might be dissatisfied, leading to the potential loss of customers."
   },
   {
     "QuestionID": "EX-Q12",
     "Section": "Example Questions (Exam Practice)",
     "Question": "Suppose this information is provided for a set of movie items:<br><br><img src='/static/images/exam_img7.png' alt='Active Learning Strategies Table' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>If each of the following Active Learning strategies selects one item to present to a user for rating, identify the item that is selected by each strategy:<br>(a) Popularity strategy<br>(b) Entropy strategy<br>(c) Log₁₀(Popularity)*Entropy strategy",
-    "Options": [
-      "(a) Item 1, (b) Item 4, (c) Item 2",
-      "(a) Item 4, (b) Item 1, (c) Item 3",
-      "(a) Item 2, (b) Item 3, (c) Item 1",
-      "(a) Item 1, (b) Item 2, (c) Item 4"
-    ],
-    "Answer": "(a) Item 1, (b) Item 4, (c) Item 2",
+    "Options": {
+      "A": "(a) Item 1, (b) Item 4, (c) Item 2",
+      "B": "(a) Item 4, (b) Item 1, (c) Item 3",
+      "C": "(a) Item 2, (b) Item 3, (c) Item 1",
+      "D": "(a) Item 1, (b) Item 2, (c) Item 4"
+    },
+    "Answer": "A",
     "Explanation": "According to the information:<br>• (a) Popularity strategy: selects Item 1 (highest popularity score = 1000)<br>• (b) Entropy strategy: selects Item 4 (highest entropy score = 0.9)<br>• (c) Log₁₀(Popularity)*Entropy: selects Item 2 (highest combined score = 2.16)"
   },
   {
     "QuestionID": "EX-Q13",
     "Section": "Example Questions (Exam Practice)",
     "Question": "Briefly explain the cold start problem in recommender systems.",
-    "Options": [
-      "The cold start problem refers to the challenge when a recommender system needs a certain number of ratings before it can produce accurate recommendations, but not all users may have rated enough items.",
-      "The cold start problem refers to slow system performance during startup.",
-      "The cold start problem refers to the challenge of recommending items in cold weather.",
-      "The cold start problem refers to hardware failures in server systems."
-    ],
-    "Answer": "The cold start problem refers to the challenge when a recommender system needs a certain number of ratings before it can produce accurate recommendations, but not all users may have rated enough items.",
+    "Options": {
+      "A": "The cold start problem refers to the challenge when a recommender system needs a certain number of ratings before it can produce accurate recommendations, but not all users may have rated enough items.",
+      "B": "The cold start problem refers to slow system performance during startup.",
+      "C": "The cold start problem refers to the challenge of recommending items in cold weather.",
+      "D": "The cold start problem refers to hardware failures in server systems."
+    },
+    "Answer": "A",
     "Explanation": "The cold start problem in recommender systems refers to the challenge faced when a recommender system needs a certain number of ratings before it can produce accurate recommendations. However, not all users may have rated enough items to meet this threshold, leading to the \"cold start\" problem."
   },
   {
     "QuestionID": "EX-Q14",
     "Section": "Example Questions (Exam Practice)",
     "Question": "In the user-centric evaluation framework, what does SSA stand for?",
-    "Options": [
-      "Subjective System Aspects",
-      "Systematic Study App",
-      "Subjective Structural Assessment",
-      "Cyclic Assessment of Explanation",
-      "None of the given options"
-    ],
-    "Answer": "Subjective System Aspects",
+    "Options": {
+      "A": "Subjective System Aspects",
+      "B": "Systematic Study App",
+      "C": "Subjective Structural Assessment",
+      "D": "Cyclic Assessment of Explanation",
+      "E": "None of the given options"
+    },
+    "Answer": "A",
     "Explanation": "SSA stands for Subjective System Aspects in the user-centric evaluation framework."
   },
   {
     "QuestionID": "EX-Q15",
     "Section": "Example Questions (Exam Practice)",
     "Question": "Below is the formula for RMSE (Root Mean Squared Error):<br><br><img src='/static/images/exam_img9.png' alt='RMSE Formula' style='max-width:100%; margin: 10px 0;'><br><br>Given the dataset below, calculate the RMSE value:<br><br><img src='/static/images/exam_img10.png' alt='RMSE Dataset' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'>",
-    "Options": [
-      "0.95",
-      "1.04",
-      "1.10",
-      "1.25"
-    ],
-    "Answer": "1.04",
+    "Options": {
+      "A": "0.95",
+      "B": "1.04",
+      "C": "1.10",
+      "D": "1.25"
+    },
+    "Answer": "B",
     "Explanation": "sum = (5-4.5)² + (4-5)² + (5-5)² + (3-5)² + (5-4.5)²<br>sum = 0.25 + 1 + 0 + 4 + 0.25 = 5.5<br>RMSE = √(5.5/5) = √1.1 = 1.04"
   },
   {
     "QuestionID": "EX-Q16",
     "Section": "Example Questions (Exam Practice)",
     "Question": "Which of the following is NOT a goal for providing explanations in a recommendation?",
-    "Options": [
-      "Transparency",
-      "Efficiency",
-      "Cold starting"
-    ],
-    "Answer": "Cold starting",
+    "Options": {
+      "A": "Transparency",
+      "B": "Efficiency",
+      "C": "Cold starting"
+    },
+    "Answer": "C",
     "Explanation": "Cold starting is NOT a goal for providing explanations. Explanations in recommender systems aim for goals such as transparency, efficiency, trustworthiness, etc., but not cold starting."
   },
   {
     "QuestionID": "EX-Q17",
     "Section": "Example Questions (Exam Practice)",
     "Question": "Determine the type of explanation provided by the following statement:<br><br>\"You have to do your homework because your dad said so.\"",
-    "Options": [
-      "Functional explanation",
-      "Causal explanation",
-      "Intentional explanation",
-      "Scientific explanation",
-      "None of the given options"
-    ],
-    "Answer": "Intentional explanation",
+    "Options": {
+      "A": "Functional explanation",
+      "B": "Causal explanation",
+      "C": "Intentional explanation",
+      "D": "Scientific explanation",
+      "E": "None of the given options"
+    },
+    "Answer": "C",
     "Explanation": "Intentional explanation. This type of explanation gives reasons for human behavior."
   },
   {
     "QuestionID": "EX-Q18",
     "Section": "Example Questions (Exam Practice)",
     "Question": "Consider the formula for calculating the sparsity of a dataset:<br><br>$$Sparsity = 1 - \\frac{|R|}{|I| \\times |U|}$$<br><br>If a dataset comprises 100,000 ratings provided by 943 users to 1,682 items, what is the sparsity of this dataset?",
-    "Options": [
-      "0.063",
-      "0.874",
-      "0.936",
-      "0.964"
-    ],
-    "Answer": "0.936",
+    "Options": {
+      "A": "0.063",
+      "B": "0.874",
+      "C": "0.936",
+      "D": "0.964"
+    },
+    "Answer": "C",
     "Explanation": "Number of Ratings = |R| = 100,000<br>Total Possible Ratings = |I| × |U| = 943 × 1682 = 1,585,826<br>Sparsity = 1 - 100,000/1,585,826 ≈ 0.936"
   },
   {
     "QuestionID": "EX-Q19",
     "Section": "Example Questions (Exam Practice)",
     "Question": "Which of the following approaches would be most suitable for a house recommender system?",
-    "Options": [
-      "Content-based",
-      "Knowledge-based",
-      "Collaborative Filtering"
-    ],
-    "Answer": "Knowledge-based",
+    "Options": {
+      "A": "Content-based",
+      "B": "Knowledge-based",
+      "C": "Collaborative Filtering"
+    },
+    "Answer": "B",
     "Explanation": "Knowledge-based. In such a scenario, a pure Collaborative Filtering (CF) system will not perform well because of the low number of available ratings. Moreover, in the complex product domains (e.g., housing), customers often want to define their requirements explicitly, which is not typical for Collaborative and Content-based recommendation frameworks."
   },
   {
     "QuestionID": "EX-Q20",
     "Section": "Example Questions (Exam Practice)",
     "Question": "Consider the following product set and features:<br><br><table><tr><th>ID</th><th>f1</th><th>f2</th><th>f3</th><th>f4</th><th>f5</th></tr><tr><td>P1</td><td>100</td><td>199</td><td>21</td><td>15</td><td>20</td></tr><tr><td>P2</td><td>15</td><td>15</td><td>1</td><td>80</td><td>30</td></tr><tr><td>P3</td><td>72</td><td>30</td><td>30</td><td>14</td><td>40</td></tr><tr><td>P4</td><td>33</td><td>9000</td><td>40</td><td>5</td><td>50</td></tr></table><br><br>Which product is the best for each filter condition:<br>(a) C_F1: (f2 < 150)<br>(b) C_F2: (f4 < 15)",
-    "Options": [
-      "(a) P2 and P3, (b) P3 and P4",
-      "(a) P1 and P4, (b) P1 and P2",
-      "(a) P1 only, (b) P4 only",
-      "(a) P3 only, (b) P2 only"
-    ],
-    "Answer": "(a) P2 and P3, (b) P3 and P4",
+    "Options": {
+      "A": "(a) P2 and P3, (b) P3 and P4",
+      "B": "(a) P1 and P4, (b) P1 and P2",
+      "C": "(a) P1 only, (b) P4 only",
+      "D": "(a) P3 only, (b) P2 only"
+    },
+    "Answer": "A",
     "Explanation": "For C_F1 (f2 < 150): P2 (f2=15) and P3 (f2=30) are the best.<br>For C_F2 (f4 < 15): P3 (f4=14) and P4 (f4=5) are the best.<br>If the question asks to choose a product fulfilling both C_F1 and C_F2, then P3 is the best."
   },
   {
     "QuestionID": "EX-Q21",
     "Section": "Example Questions (Exam Practice)",
     "Question": "Consider two recommender systems rec₁ and rec₂ with scores for 3 items:<br><br><img src='/static/images/exam_img14.png' alt='Hybrid Recommender Scores' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>A weighted hybrid recommender system will combine scores using: score = β₁ × rec₁ + β₂ × rec₂<br><br>Assuming β₁ = 0.5 and β₂ = 0.5, what are the hybrid scores?",
-    "Options": [
-      "Item 1: 0.55, Item 2: 0.45, Item 3: 0.35",
-      "Item 1: 0.65, Item 2: 0.45, Item 3: 0.35",
-      "Item 1: 0.65, Item 2: 0.55, Item 3: 0.45",
-      "Item 1: 0.75, Item 2: 0.35, Item 3: 0.25"
-    ],
-    "Answer": "Item 1: 0.65, Item 2: 0.45, Item 3: 0.35",
+    "Options": {
+      "A": "Item 1: 0.55, Item 2: 0.45, Item 3: 0.35",
+      "B": "Item 1: 0.65, Item 2: 0.45, Item 3: 0.35",
+      "C": "Item 1: 0.65, Item 2: 0.55, Item 3: 0.45",
+      "D": "Item 1: 0.75, Item 2: 0.35, Item 3: 0.25"
+    },
+    "Answer": "B",
     "Explanation": "According to the formula score = β₁ × rec₁ + β₂ × rec₂:<br>• Item 1: 0.5×0.5 + 0.5×0.8 = 0.25 + 0.40 = 0.65<br>• Item 2: 0.5×0.0 + 0.5×0.9 = 0.00 + 0.45 = 0.45<br>• Item 3: 0.5×0.3 + 0.5×0.4 = 0.15 + 0.20 = 0.35"
   },
   {
     "QuestionID": "EX-Q22",
     "Section": "Example Questions (Exam Practice)",
     "Question": "What does CF stand for in the recommender system approaches?",
-    "Options": [
-      "Content Filtering",
-      "Collaborative Filtering",
-      "Combined Filtering",
-      "Customer Filtering"
-    ],
-    "Answer": "Collaborative Filtering",
+    "Options": {
+      "A": "Content Filtering",
+      "B": "Collaborative Filtering",
+      "C": "Combined Filtering",
+      "D": "Customer Filtering"
+    },
+    "Answer": "B",
     "Explanation": "CF stands for Collaborative Filtering."
   },
   {
     "QuestionID": "EX-Q23",
     "Section": "Example Questions (Exam Practice)",
     "Question": "Consider the following scenario:<br><br>You have obtained a dataset that contains user ratings for shoes sold in an online store. To build a recommender model for shoes, you decide to perform an offline evaluation by predicting the Top 10 shoes to recommend for a user and then compare this to the 10 shoes the user actually liked.<br><br>Which metric is suitable for this evaluation?",
-    "Options": [
-      "F1 score",
-      "Root Mean Square Error",
-      "Mean Absolute Error"
-    ],
-    "Answer": "F1 score",
+    "Options": {
+      "A": "F1 score",
+      "B": "Root Mean Square Error",
+      "C": "Mean Absolute Error"
+    },
+    "Answer": "A",
     "Explanation": "F1 score. The F1 score is the average (harmonic mean) of Precision and Recall. This metric is particularly suitable for classification tasks in recommender systems where the goal is to select a ranked list of Top-n items."
   },
   {
     "QuestionID": "EX-Q24",
     "Section": "Example Questions (Exam Practice)",
     "Question": "A movie recommender system generates a list of recommendations predicted to be relevant for the user:<br><br><img src='/static/images/exam_img16.png' alt='Movie Recommendations' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>Calculate the Precision, Recall, and F1 Score.",
-    "Options": [
-      "Precision: 0.5, Recall: 0.6, F1: 0.54",
-      "Precision: 0.6, Recall: 0.5, F1: 0.54",
-      "Precision: 0.5, Recall: 0.5, F1: 0.50",
-      "Precision: 0.6, Recall: 0.6, F1: 0.60"
-    ],
-    "Answer": "Precision: 0.5, Recall: 0.6, F1: 0.54",
+    "Options": {
+      "A": "Precision: 0.5, Recall: 0.6, F1: 0.54",
+      "B": "Precision: 0.6, Recall: 0.5, F1: 0.54",
+      "C": "Precision: 0.5, Recall: 0.5, F1: 0.50",
+      "D": "Precision: 0.6, Recall: 0.6, F1: 0.60"
+    },
+    "Answer": "A",
     "Explanation": "The good movies that are recommended are: Movie 24, Movie 14, and Movie 11 (3 movies).<br>• Precision = 3/6 = 0.5 (3 relevant out of 6 recommended)<br>• Recall = 3/5 = 0.6 (3 recommended out of 5 relevant)<br>• F1 = 2×(0.5×0.6)/(0.5+0.6) ≈ 0.54"
   },
   {
     "QuestionID": "EX-Q25",
     "Section": "Example Questions (Exam Practice)",
     "Question": "Which of the following recommendation approaches can utilize visual features extracted from movie items?",
-    "Options": [
-      "Collaborative Filtering",
-      "SVD",
-      "Content-based Filtering",
-      "Random",
-      "None of the given options"
-    ],
-    "Answer": "Content-based Filtering",
+    "Options": {
+      "A": "Collaborative Filtering",
+      "B": "SVD",
+      "C": "Content-based Filtering",
+      "D": "Random",
+      "E": "None of the given options"
+    },
+    "Answer": "C",
     "Explanation": "Content-based Filtering. This approach can utilize content features (attributes) of items, such as visual features, or audio features, extracted from movie files."
   },
   {
     "QuestionID": "EX-Q26",
     "Section": "Example Questions (Exam Practice)",
     "Question": "Consider the following dataset of transactions:<br><br><table><tr><th>TID</th><th>Items</th></tr><tr><td>T1</td><td>Milk, Diaper, Beer</td></tr><tr><td>T2</td><td>Bread, Diaper, Beer, Eggs</td></tr><tr><td>T3</td><td>Milk, Diaper, Beer, Cola</td></tr><tr><td>T4</td><td>Bread, Milk, Diaper, Beer</td></tr><tr><td>T5</td><td>Bread, Milk, Cola</td></tr></table><br><br>Calculate the support and confidence for the following association rule:<br>{Milk, Diaper} ⇒ Beer",
-    "Options": [
-      "Support: 0.4, Confidence: 0.66",
-      "Support: 0.6, Confidence: 0.75",
-      "Support: 0.5, Confidence: 0.80",
-      "Support: 0.3, Confidence: 0.50"
-    ],
-    "Answer": "Support: 0.4, Confidence: 0.66",
+    "Options": {
+      "A": "Support: 0.4, Confidence: 0.66",
+      "B": "Support: 0.6, Confidence: 0.75",
+      "C": "Support: 0.5, Confidence: 0.80",
+      "D": "Support: 0.3, Confidence: 0.50"
+    },
+    "Answer": "A",
     "Explanation": "• Support: Transactions containing {Milk, Diaper, Beer} = {T1, T3} = 2 out of 5<br>Support = 2/5 = 0.4<br>• Confidence: Transactions with {Milk, Diaper} that also have Beer<br>Transactions with {Milk, Diaper} = {T1, T3, T4} = 3<br>Of these, {T1, T3} have Beer = 2<br>Confidence = 2/3 ≈ 0.66"
   },
   {
     "QuestionID": "EX-Q27",
     "Section": "Example Questions (Exam Practice)",
     "Question": "Imagine a scenario where you are developing a camera recommender system. You set up two algorithms (CF1 & CF2) to predict the most suitable cameras for users. In the end, your final rating prediction is based on 60% of the score predicted by CF1 and 40% of the score predicted by CF2.<br><br>Which of these alternatives best describes the type of recommender developed in this scenario?",
-    "Options": [
-      "Monolithic Hybridization Design",
-      "Parallelized Hybridization Design",
-      "Pipelined Invocation Design",
-      "Conjunctive Content Processing"
-    ],
-    "Answer": "Parallelized Hybridization Design",
+    "Options": {
+      "A": "Monolithic Hybridization Design",
+      "B": "Parallelized Hybridization Design",
+      "C": "Pipelined Invocation Design",
+      "D": "Conjunctive Content Processing"
+    },
+    "Answer": "B",
     "Explanation": "Parallelized Hybridization Design. This type of hybridization employs several recommenders side by side and uses a hybridization mechanism to aggregate their outputs. In the given scenario, two algorithms, CF1 and CF2, are working simultaneously, and their results are combined based on a weighted average, aligning with the characteristics of parallelized hybridization."
   },
   {
     "QuestionID": "EX-Q28",
     "Section": "Example Questions (Exam Practice)",
     "Question": "The following figure represents the Confusion Matrix:<br><br><img src='/static/images/exam_img18.png' alt='Confusion Matrix' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>What is the name of evaluation metric represented by the formula: TP / (TP + FN)?",
-    "Options": [
-      "Precision",
-      "Recall",
-      "F1 Score",
-      "Accuracy"
-    ],
-    "Answer": "Recall",
+    "Options": {
+      "A": "Precision",
+      "B": "Recall",
+      "C": "F1 Score",
+      "D": "Accuracy"
+    },
+    "Answer": "B",
     "Explanation": "Recall = TP / (TP + FN). Recall measures the proportion of actual positives that were correctly identified."
   },
   {
     "QuestionID": "EX-Q29",
     "Section": "Example Questions (Exam Practice)",
     "Question": "Determine the type of explanation provided by the following statement:<br><br>\"Laptop X has a longer battery life than Laptop Y due to its advanced lithium-ion technology, which allows for more efficient energy consumption.\"",
-    "Options": [
-      "Colourful explanation",
-      "Intentional explanation",
-      "Scientific explanation",
-      "None of the given options"
-    ],
-    "Answer": "Scientific explanation",
+    "Options": {
+      "A": "Colourful explanation",
+      "B": "Intentional explanation",
+      "C": "Scientific explanation",
+      "D": "None of the given options"
+    },
+    "Answer": "C",
     "Explanation": "Scientific explanation. This type of explanation is used to express relations between the concepts formulated in various scientific fields and is typically based on refutable theories."
   },
   {
     "QuestionID": "EX-Q30",
     "Section": "Example Questions (Exam Practice)",
     "Question": "Consider the following recommendation methods:<br>• Collaborative Filtering (CF)<br>• Content-based Filtering (CBF)<br>• Knowledge-based<br><br>Which of these methods best aligns with each of the following approaches?<br>• Approach 1: \"Show me more of the same that I've liked.\"<br>• Approach 2: \"Show me what fits based on my needs.\"<br>• Approach 3: \"Show me what's popular among my peers.\"",
-    "Options": [
-      "Approach 1: CBF, Approach 2: Knowledge-based, Approach 3: CF",
-      "Approach 1: CF, Approach 2: CBF, Approach 3: Knowledge-based",
-      "Approach 1: Knowledge-based, Approach 2: CF, Approach 3: CBF",
-      "Approach 1: CBF, Approach 2: CF, Approach 3: Knowledge-based"
-    ],
-    "Answer": "Approach 1: CBF, Approach 2: Knowledge-based, Approach 3: CF",
+    "Options": {
+      "A": "Approach 1: CBF, Approach 2: Knowledge-based, Approach 3: CF",
+      "B": "Approach 1: CF, Approach 2: CBF, Approach 3: Knowledge-based",
+      "C": "Approach 1: Knowledge-based, Approach 2: CF, Approach 3: CBF",
+      "D": "Approach 1: CBF, Approach 2: CF, Approach 3: Knowledge-based"
+    },
+    "Answer": "A",
     "Explanation": "• Approach 1 \"Show me more of the same that I've liked\": Content-based Filtering (recommends similar items based on content features)<br>• Approach 2 \"Show me what fits based on my needs\": Knowledge-based (uses explicit user requirements)<br>• Approach 3 \"Show me what's popular among my peers\": Collaborative Filtering (uses peer behavior/ratings)"
   },
   {
     "QuestionID": "EX-Q31",
     "Section": "Example Questions (Exam Practice)",
     "Question": "Why using Term Frequency (TF) alone is not a good approach for modeling documents?",
-    "Options": [
-      "It assumes all terms have similar importance",
-      "It doesn't consider the length of the document",
-      "It ignores the uniqueness of terms in different documents",
-      "All of the given options"
-    ],
-    "Answer": "All of the given options",
+    "Options": {
+      "A": "It assumes all terms have similar importance",
+      "B": "It doesn't consider the length of the document",
+      "C": "It ignores the uniqueness of terms in different documents",
+      "D": "All of the given options"
+    },
+    "Answer": "D",
     "Explanation": "All of the given options. TF alone: (1) assumes all terms have similar importance, (2) doesn't consider document length, and (3) ignores term uniqueness across documents. This is why TF-IDF is typically used instead."
   },
   {
     "QuestionID": "EX-Q32",
     "Section": "Example Questions (Exam Practice)",
     "Question": "Consider the following dataset of ratings:<br><br><table><tr><th>User</th><th>Item 1</th><th>Item 2</th><th>Item 3</th><th>Item 4</th><th>Item 5</th></tr><tr><td>U1</td><td>5</td><td>-</td><td>4</td><td>-</td><td>5</td></tr><tr><td>U2</td><td>4</td><td>3</td><td>-</td><td>-</td><td>4</td></tr><tr><td>U3</td><td>-</td><td>3</td><td>5</td><td>4</td><td>-</td></tr><tr><td>U4</td><td>3</td><td>-</td><td>4</td><td>5</td><td>-</td></tr></table><br><br>Calculate the support and confidence for the following association rule:<br>Item 1 ⇒ Item 5",
-    "Options": [
-      "Support: 0.5, Confidence: 1.0",
-      "Support: 0.4, Confidence: 0.8",
-      "Support: 0.5, Confidence: 0.75",
-      "Support: 0.25, Confidence: 0.5"
-    ],
-    "Answer": "Support: 0.5, Confidence: 1.0",
+    "Options": {
+      "A": "Support: 0.5, Confidence: 1.0",
+      "B": "Support: 0.4, Confidence: 0.8",
+      "C": "Support: 0.5, Confidence: 0.75",
+      "D": "Support: 0.25, Confidence: 0.5"
+    },
+    "Answer": "A",
     "Explanation": "• Users who rated Item 1: U1, U2, U4 (but we need users who rated BOTH Item 1 and Item 5)<br>• Users who rated both Item 1 AND Item 5: U1, U2 = 2 users<br>• Total users: 4<br>• Support = 2/4 = 0.5<br>• Confidence = (Users with Item 1 & Item 5) / (Users with Item 1) = 2/2 = 1.0"
   },
   {
     "QuestionID": "EX-Q33",
     "Section": "Example Questions (Exam Practice)",
     "Question": "What do Precision and Recall measure?",
-    "Options": [
-      "Precision measures the proportion of retrieved instances that are relevant. Recall measures the proportion of relevant instances that are retrieved.",
-      "Precision measures the total number of predictions. Recall measures the accuracy of predictions.",
-      "Precision measures the speed of the algorithm. Recall measures memory usage.",
-      "Precision measures user satisfaction. Recall measures system performance."
-    ],
-    "Answer": "Precision measures the proportion of retrieved instances that are relevant. Recall measures the proportion of relevant instances that are retrieved.",
+    "Options": {
+      "A": "Precision measures the proportion of retrieved instances that are relevant. Recall measures the proportion of relevant instances that are retrieved.",
+      "B": "Precision measures the total number of predictions. Recall measures the accuracy of predictions.",
+      "C": "Precision measures the speed of the algorithm. Recall measures memory usage.",
+      "D": "Precision measures user satisfaction. Recall measures system performance."
+    },
+    "Answer": "A",
     "Explanation": "Precision measures the proportion of retrieved instances that are relevant. Recall measures the proportion of relevant instances that are retrieved. For example, in a movie recommender, precision measures the proportion of recommended movies that are relevant (actually good). Recall measures the proportion of all good movies that are recommended."
   },
   {
     "QuestionID": "EX-Q34",
     "Section": "Example Questions (Exam Practice)",
     "Question": "The dataset below represents ratings provided by users for different items.<br><br><img src='/static/images/exam_img22.png' alt='Rating Dataset' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>What is the predicted rating of User 1 for Item 5 indicated with '???' in the dataset based on user similarities?<br><br><img src='/static/images/exam_img23.png' alt='Additional Data' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'>",
-    "Options": [
-      "4.0",
-      "4.3",
-      "4.6",
-      "5.0"
-    ],
-    "Answer": "4.6",
+    "Options": {
+      "A": "4.0",
+      "B": "4.3",
+      "C": "4.6",
+      "D": "5.0"
+    },
+    "Answer": "C",
     "Explanation": "Using the user-based CF formula:<br>pred(user1, item5) = r̄_user1 + Σ(sim × (r - r̄)) / Σ|sim|<br><br>= 4.0 + (0.85×(3-2.4) + 0.0×(4-3.6)) / (0.85 + 0.0)<br>= 4.0 + (0.85×0.6 + 0) / 0.85<br>= 4.0 + 0.51 / 0.85<br>= 4.0 + 0.6<br>= 4.6"
   },
   {
     "QuestionID": "EX-Q35",
     "Section": "Example Questions (Exam Practice)",
     "Question": "Which type of explanation deals with the functions of systems?",
-    "Options": [
-      "Scientific",
-      "Functional",
-      "Intentional",
-      "None of the given options"
-    ],
-    "Answer": "Functional",
+    "Options": {
+      "A": "Scientific",
+      "B": "Functional",
+      "C": "Intentional",
+      "D": "None of the given options"
+    },
+    "Answer": "B",
     "Explanation": "Functional explanation deals with the functions of systems. It explains how something works or what purpose it serves."
   }
 ]
