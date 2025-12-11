@@ -94,7 +94,7 @@
   {
     "QuestionID": "EX-Q8",
     "Section": "Example Questions (Exam Practice)",
-    "Question": "Consider a dataset with ratings provided by users for some items. User 1, User 2, and User 3 are members of a group. A group recommender system is requested to generate a recommendation list with the Top 5 items for this group.<br><br><img src='/static/images/exam_img5.png' alt='Group Ratings Dataset' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>Based on the 'Average' strategy in group recommender systems, which items will be recommended to this group?",
+    "Question": "Consider a dataset with ratings provided by users for some items. User 1, User 2, and User 3 are members of a group. A group recommender system is requested to generate a recommendation list with the Top 5 items for this group.<br><br><img src='/static/images/exam_img6.png' alt='Group Ratings Dataset' style='max-width:100%; border: 2px solid #333; margin: 10px 0;'><br><br>Based on the 'Average' strategy in group recommender systems, which items will be recommended to this group?",
     "Options": {
       "A": "E, F, J, H, D",
       "B": "F, E, J, H, D",
